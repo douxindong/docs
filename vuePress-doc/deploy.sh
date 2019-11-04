@@ -24,5 +24,6 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:douxindong.github.io/Docs.git master:gh-pages
-git push -f git@github.com:douxindong/DocDemo.git master:gh-pages
+#放在gh-pages分支中
+git push -f git@github.com:douxindong/docs.git master:gh-pages
 cd -
