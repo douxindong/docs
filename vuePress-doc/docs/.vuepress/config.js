@@ -1,7 +1,7 @@
 module.exports = {
     base:'/docs/',
-    title: 'Hello VuePress',
-    description: 'Hello, my friend!',
+    title: 'Limery',
+    description: '欢迎!',
     head: [
         ['link', {
             rel: 'icon',
@@ -15,6 +15,7 @@ module.exports = {
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Guide', link: '/guide/' },
+            { text: 'Api', link: '/api/' },
           {
             text: 'Languages',
             items: [
@@ -24,13 +25,47 @@ module.exports = {
           },
           { text: 'External', link: 'https://www.baidu.com' },
         ],
-        sidebarDepth: 2,
-        sidebar: [
-            {
-            title: 'Guide',
-            collapsable: false,
-            children: ['/guide/']
-            }
-        ]
+        sidebar: {
+            '/api/': getApiSidebar(),
+            '/guide/': getGuideSidebar(),
+        },
+        lastUpdated: 'Last Updated', // string | boolean
+        repo: 'https://github.com/douxindong',
     }
+}
+function getApiSidebar () {
+    return [{
+        title: '前言',
+        collapsable: false,
+        children:[
+            '',
+        ]
+    },{
+        title: 'API',
+        collapsable: false,
+        children:[
+            'huiyuanquanyi',
+            'Recived',
+            'vipactInfo',
+            'vipactjoin',
+            'vipfriendinfo',
+            'vipfriendzhu',
+            'viprecivefudai'
+        ]
+    }]
+}
+function getGuideSidebar () {
+    return [{
+        title: '前言',
+        collapsable: false,
+        children:[
+            '',
+        ]
+    },{
+        title: 'API',
+        collapsable: false,
+        children:[
+            'Python01',
+        ]
+    }]
 }

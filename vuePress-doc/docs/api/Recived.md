@@ -1,8 +1,8 @@
-权益领券接口
+# 权益领券接口2
 ===================
 
 
-### **接口说明**
+## **接口说明**
 
 1. 接口名称：权益领券接口
 2. 传输方式：POST
@@ -14,7 +14,7 @@
 | PRE|http://w2api-pre.lifevc.com/MarketingAct/{webid}/Reward/Receive?idtype={idtype}&id={id}  |   
 | 正式|https://w2api.lifevc.com/MarketingAct/{webid}/Reward/Receive?idtype={idtype}&id={id}  | 
 
-### **请求参数格式**
+## **请求参数格式**
 
 | **名称**   | **类型** | **必填** | **说明** |
 | :-------: | :----:   | :---:   | :---:   |
@@ -22,7 +22,7 @@
 | idtype| Int|  是    | 取info接口内的Idtype
 | id| Int|  是    | 取info接口内的InfoId
 
-### **请求头Headers**
+## **请求头Headers**
 
 | **名称** | **类型** | **必填** | **说明** |
 | :-------: 	 | :----: | :------:  | :---: |
@@ -30,14 +30,14 @@
 | ApiToken    	 | String |  是    | 接口请求token，值为固定值，由丽芙家居提供
 | ustr    	 | String |  否    | 用户身份标识， 取si
 
-### **字段说明：**
+## **字段说明：**
 ```
 Recived=true 表示已领取
 IsEmpty=true 表示已抢空
 
 ```
 
-### **使用实例**
+## **使用实例**
 
 * 访问示例：https://w2api.lifevc.com/MarketingAct/{webid}/Reward/Receive?idtype={idtype}&id={id}
 * 返回参数示例：
