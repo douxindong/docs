@@ -44,6 +44,7 @@ function getApiSidebar () {
         title: 'API',
         collapsable: false,
         children:[
+            'Report',
             'huiyuanquanyi',
             'Recived',
             'vipactInfo',
