@@ -50,6 +50,7 @@ function getApiSidebar () {
             'GreenCart/ShareGreenCardAPI',
             'GreenCart/ReceiveGreenCardAPI',
             'GreenCart/MyListGreenCardAPI',
+            'Report',
             'huiyuanquanyi',
             'Recived',
             'vipactInfo',
