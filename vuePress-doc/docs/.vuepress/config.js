@@ -44,6 +44,12 @@ function getApiSidebar () {
         title: 'API',
         collapsable: false,
         children:[
+            'GreenCart/GreenCardAPI',
+            'GreenCart/ConfigGreenCardAPI',
+            'GreenCart/CreatetGreenCardAPI',
+            'GreenCart/ShareGreenCardAPI',
+            'GreenCart/ReceiveGreenCardAPI',
+            'GreenCart/MyListGreenCardAPI',
             'huiyuanquanyi',
             'Recived',
             'vipactInfo',
