@@ -44,6 +44,8 @@ function getApiSidebar () {
         title: 'API',
         collapsable: false,
         children:[
+            'DivideOneMillion/UserInfo',
+            'DivideOneMillion/Receive',
             'GreenCart/GreenCardAPI',
             'GreenCart/ConfigGreenCardAPI',
             'GreenCart/CreatetGreenCardAPI',
