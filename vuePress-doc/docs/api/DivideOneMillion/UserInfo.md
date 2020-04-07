@@ -41,7 +41,7 @@ UserFace:微信头像
 NickName:微信昵称
 CashOutStatus:提现状态：未提现1、提现中2、已提现3、已失效4、已过期5；为0的话说明为满足条件或者未开奖
 ShareAmountPerCapita:人均瓜分金额
-？：有效天数
+CashOutDays：有效天数
 OrderStartTime订单开始时间即圈定某时间段内下的订单满足条件
 ```
 
