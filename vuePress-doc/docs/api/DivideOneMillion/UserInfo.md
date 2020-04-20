@@ -39,8 +39,7 @@ IsLottery:是否已开奖
 IsBindWX:是否已绑定微信
 UserFace:微信头像
 NickName:微信昵称
-CashOutStatus:提现状态：未提现1、提现中2、已提现3、已失效4、已过期5；为0的话说明为满足条件或者未开奖
-ShareAmountPerCapita:人均瓜分金额
+CashOutStatus:提现状态：1未提现、2提现中、3已失效、4已提现、5已过期；为0的话说明：未满足条件或者未开奖ShareAmountPerCapita:人均瓜分金额
 CashOutDays：有效天数
 OrderStartTime订单开始时间即圈定某时间段内下的订单满足条件
 ```
