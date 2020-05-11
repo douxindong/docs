@@ -38,12 +38,19 @@ function getApiSidebar () {
         title: '前言',
         collapsable: false,
         children:[
-            '',
+        ]
+    },{
+        title: 'APP短视频',
+        collapsable: false,
+        children:[
+            'AppDocument/Video',
         ]
     },{
         title: 'API',
         collapsable: false,
         children:[
+
+            'AppDocument/AppScreenAd',
             'DivideOneMillion/UserInfo',
             'DivideOneMillion/Receive',
             'GreenCart/GreenCardAPI',
