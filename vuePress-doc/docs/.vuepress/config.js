@@ -43,6 +43,9 @@ function getApiSidebar () {
         title: 'APP短视频',
         collapsable: false,
         children:[
+            'AppDocument/appconfig',
+            'AppDocument/videologin',
+            'AppDocument/videostatistical',
             'AppDocument/Video',
         ]
     },{
