@@ -40,16 +40,21 @@ function getApiSidebar () {
         children:[
         ]
     },{
-        title: 'APP短视频',
+        title: '趣视频',
+        collapsable: false,
+        children:[
+            'AppDocument/Video',
+        ]
+    },{
+        title: 'LifeVC 短视频',
         collapsable: false,
         children:[
             'AppDocument/appconfig',
             'AppDocument/videologin',
             'AppDocument/videostatistical',
-            'AppDocument/Video',
         ]
     },{
-        title: 'API',
+        title: 'H5活动接口',
         collapsable: false,
         children:[
 
