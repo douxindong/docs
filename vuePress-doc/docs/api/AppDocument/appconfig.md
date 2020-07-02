@@ -1,10 +1,7 @@
 # LifeVC app配置接口
 ===================
 
-## 登录获取Token
-
-
-### **接口说明**
+## **接口说明**
 
 1. 接口名称：app配置接口
 2. 传输方式：GET
@@ -14,27 +11,24 @@
 | :-------: | :----------: | :---: |
 | 正式|https://rest.lifevc.com/content/Setting | 
 
-### **请求参数格式**
-| **名称** | **类型** | **必填** | **说明** |
-| :-------: 	 | :----: | :------:  | :---: |
-| LoginName    	 | String |  是    | 
-| LoginPwd    	 | String |  是    | PwdMd5
-### **请求头Headers**
+## **请求参数格式**
+
+## **请求头Headers**
 
 | **名称** | **类型** | **必填** | **说明** |
 | :-------: 	 | :----: | :------:  | :---: |
 | Content-Type    	 | String |  是    | 请求方式，值=application/json
-| ApiToken    	 | String |  是    | VmlkZW9BcGl8NWRsZEdpZWwyOGVqdDlkT1UyZGx1bkkz（下同）
+| ApiToken    	 | String |  是    | rest的
 | ustr    	 | String |  否    | 用户身份标识， 取si
 
-### **字段说明：**
+## **字段说明：**
 ```
 EnableVideoPlugin 为false的话不初始化任何与视频相关的SDK和预加载
 EnableVideo 为false的话第三个TabBar为闲逛
 下次生效本次存储保证性能
 ```
 
-### **使用实例**
+## **使用实例**
 
 * 访问示例：
 ```

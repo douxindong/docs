@@ -10,7 +10,7 @@
 
 | **环境** | **请求连接** | **说明** |
 | :-------: | :----------: | :---: |
-| 正式|https://w2api.lifevc.com/video/{{WebId}}/ViewLog?DeviceId={{DeviceId}}&Duration={{Duration}} | 
+| 正式|https://w2api.lifevc.com/video/{WebId}/ViewLog?DeviceId={DeviceId}&Duration={Duration} | 
 
 ### **请求参数格式**
 
@@ -18,7 +18,7 @@
 | :-------: | :----:   | :---:   | :---:   |
 | WebId| String|  是    | 活动webid
 | DeviceId| String|  是    | 设备ID，唯一
-| Duration| String|  是    | 具体播放的时间单位：秒
+| Duration| int|  是    | 具体播放的时间单位：秒
 
 ### **请求头Headers**
 
@@ -81,7 +81,7 @@ https://w2api.lifevc.com/video/8dbd377b2d624513b81310097300ca0d/ViewLog?DeviceId
 | :-------: | :----:   | :---:   | :---:   |
 | WebId| String|  是    | 活动webid
 | DeviceId| String|  是    | 设备ID，唯一
-| type| String|  是    | 跳转商品详情1
+| type| int|  是    | 跳转商品详情1
 | itemInfoId| String|  是    | 商品ID
 
 
