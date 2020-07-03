@@ -40,6 +40,13 @@ function getApiSidebar () {
         children:[
         ]
     },{
+        title: '试用官',
+        collapsable: false,
+        children:[
+            'shiyongguan/shiyongguan',
+            'shiyongguan/shiyongguan-wx'
+        ]
+    },{
         title: '趣视频',
         collapsable: false,
         children:[
