@@ -52,7 +52,7 @@ https://w2api.lifevc.com/Act/TrialRefferer/tuijianguan1/1cc74b44b546498898d02cc9
 
 ```
 失败
-```
+```json
 {
     "Result": true,
     "Status": 0,

@@ -3,10 +3,7 @@ module.exports = {
     title: 'Limery',
     description: '欢迎!',
     head: [
-        ['link', {
-            rel: 'icon',
-            href: `/favicon.png`
-        }]
+        ['link', {rel: 'icon', href: `/favicon.png`}],
     ],
     dest: './docs/.vuepress/dist',
     ga: '',
@@ -86,17 +83,21 @@ function getApiSidebar () {
     }]
 }
 function getGuideSidebar () {
-    return [{
-        title: '前言',
+    return [
+    //     {
+    //     title: '前言',
+    //     collapsable: false,
+    //     children:[
+    //         '',
+    //     ]
+    // },
+        {
+        title: 'apple login',
         collapsable: false,
         children:[
-            '',
-        ]
-    },{
-        title: 'API',
-        collapsable: false,
-        children:[
-            'Python01',
+            // 'Python01',
+            'SignInWithApple',
+            'SignInWithAppleJavaImp',
         ]
     }]
 }
