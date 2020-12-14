@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>app端 | Limery</title>
+    <meta name="description" content="欢迎!">
+    <link rel="icon" href="/docs/favicon.png">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.d863bf22.css" as="style"><link rel="preload" href="/docs/assets/js/app.b6d384de.js" as="script"><link rel="preload" href="/docs/assets/js/2.ffdb66c4.js" as="script"><link rel="preload" href="/docs/assets/js/36.5c93bdf4.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.dc6279fc.js"><link rel="prefetch" href="/docs/assets/js/11.ceee348c.js"><link rel="prefetch" href="/docs/assets/js/12.fab59449.js"><link rel="prefetch" href="/docs/assets/js/13.60f5107c.js"><link rel="prefetch" href="/docs/assets/js/14.7f7e348e.js"><link rel="prefetch" href="/docs/assets/js/15.8e28be33.js"><link rel="prefetch" href="/docs/assets/js/16.576a0302.js"><link rel="prefetch" href="/docs/assets/js/17.6e39df8a.js"><link rel="prefetch" href="/docs/assets/js/18.1943ae8b.js"><link rel="prefetch" href="/docs/assets/js/19.5508bf7a.js"><link rel="prefetch" href="/docs/assets/js/20.d1200c34.js"><link rel="prefetch" href="/docs/assets/js/21.5478a8ab.js"><link rel="prefetch" href="/docs/assets/js/22.dc8c5432.js"><link rel="prefetch" href="/docs/assets/js/23.1d674969.js"><link rel="prefetch" href="/docs/assets/js/24.470569d1.js"><link rel="prefetch" href="/docs/assets/js/25.629d8d29.js"><link rel="prefetch" href="/docs/assets/js/26.0204c872.js"><link rel="prefetch" href="/docs/assets/js/27.8933170a.js"><link rel="prefetch" href="/docs/assets/js/28.bf23bcd3.js"><link rel="prefetch" href="/docs/assets/js/29.2e25fc55.js"><link rel="prefetch" href="/docs/assets/js/3.eeb6970b.js"><link rel="prefetch" href="/docs/assets/js/30.589dd9fb.js"><link rel="prefetch" href="/docs/assets/js/31.85941da4.js"><link rel="prefetch" href="/docs/assets/js/32.94cbee4c.js"><link rel="prefetch" href="/docs/assets/js/33.171bbaaa.js"><link rel="prefetch" href="/docs/assets/js/34.020ddec5.js"><link rel="prefetch" href="/docs/assets/js/35.835bfd50.js"><link rel="prefetch" href="/docs/assets/js/37.92cf4e33.js"><link rel="prefetch" href="/docs/assets/js/38.a3e95851.js"><link rel="prefetch" href="/docs/assets/js/39.76fb2cc2.js"><link rel="prefetch" href="/docs/assets/js/4.65986612.js"><link rel="prefetch" href="/docs/assets/js/40.420380bb.js"><link rel="prefetch" href="/docs/assets/js/41.713fee93.js"><link rel="prefetch" href="/docs/assets/js/42.54fc0492.js"><link rel="prefetch" href="/docs/assets/js/43.0e663909.js"><link rel="prefetch" href="/docs/assets/js/44.7dfb3295.js"><link rel="prefetch" href="/docs/assets/js/45.8cecd56f.js"><link rel="prefetch" href="/docs/assets/js/46.787d6e84.js"><link rel="prefetch" href="/docs/assets/js/5.148bb49f.js"><link rel="prefetch" href="/docs/assets/js/6.2c6a4780.js"><link rel="prefetch" href="/docs/assets/js/7.95ad2806.js"><link rel="prefetch" href="/docs/assets/js/8.2ce2d0ed.js"><link rel="prefetch" href="/docs/assets/js/9.096f8743.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.d863bf22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Limery</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link router-link-active">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link router-link-active">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前言</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>月度超级粉丝榜</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/FansRank/" class="sidebar-link">接口文档</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>试用官V3</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html" class="active sidebar-link">app端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_1-推荐官用户信息" class="sidebar-link">1.推荐官用户信息</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_2-申请成为推荐官" class="sidebar-link">2.申请成为推荐官</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_3-提现金额页用户信息" class="sidebar-link">3.提现金额页用户信息</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_4-提现" class="sidebar-link">4.提现</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_5-拆红包" class="sidebar-link">5.拆红包</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_6-跑马灯" class="sidebar-link">6.跑马灯</a></li><li class="sidebar-sub-header"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html#_7-领取限时礼包" class="sidebar-link">7.领取限时礼包</a></li></ul></li><li><a href="/docs/api/tuijianguan-v3/tuijianguan-v3-wx.html" class="sidebar-link">微信端</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>试用官</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/shiyongguan/shiyongguan.html" class="sidebar-link">App端接口领取页面信息</a></li><li><a href="/docs/api/shiyongguan/shiyongguan-wx.html" class="sidebar-link">微信端接口领取页面信息</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Android极光VIP接入SDK文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/third-push/" class="sidebar-link">通道集成指南</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>趣视频</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/Video.html" class="sidebar-link">阿里短视频demo接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>LifeVC 短视频</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/appconfig.html" class="sidebar-link">LifeVC app配置接口</a></li><li><a href="/docs/api/AppDocument/videologin.html" class="sidebar-link">LifeVC 短视频接口</a></li><li><a href="/docs/api/AppDocument/videostatistical.html" class="sidebar-link">记录日志统计接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>H5活动接口</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/AppScreenAd.html" class="sidebar-link">获取App启动广告接口</a></li><li><a href="/docs/api/DivideOneMillion/UserInfo.html" class="sidebar-link">瓜分红包-用户信息接口</a></li><li><a href="/docs/api/DivideOneMillion/Receive.html" class="sidebar-link">瓜分红包-提现接口</a></li><li><a href="/docs/api/GreenCart/GreenCardAPI.html" class="sidebar-link">小绿卡送福接口-主页</a></li><li><a href="/docs/api/GreenCart/ConfigGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-制卡页</a></li><li><a href="/docs/api/GreenCart/CreatetGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-提交卡</a></li><li><a href="/docs/api/GreenCart/ShareGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-分享页</a></li><li><a href="/docs/api/GreenCart/ReceiveGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-领取</a></li><li><a href="/docs/api/GreenCart/MyListGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-我的列表</a></li><li><a href="/docs/api/Report.html" class="sidebar-link">活动交互统计接入说明</a></li><li><a href="/docs/api/huiyuanquanyi.html" class="sidebar-link">权益领券接口</a></li><li><a href="/docs/api/Recived.html" class="sidebar-link">权益领券接口2</a></li><li><a href="/docs/api/vipactInfo.html" class="sidebar-link">VIP会员回馈-活动</a></li><li><a href="/docs/api/vipactjoin.html" class="sidebar-link">VIP会员回馈-参与</a></li><li><a href="/docs/api/vipfriendinfo.html" class="sidebar-link">VIP会员回馈-好友验证</a></li><li><a href="/docs/api/vipfriendzhu.html" class="sidebar-link">VIP会员回馈-好友助力</a></li><li><a href="/docs/api/viprecivefudai.html" class="sidebar-link">VIP会员回馈-领取福袋</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="app端"><a href="#app端" class="header-anchor">#</a> app端</h1> <h2 id="_1-推荐官用户信息"><a href="#_1-推荐官用户信息" class="header-anchor">#</a> 1.推荐官用户信息</h2> <p>===================</p> <h3 id="接口说明"><a href="#接口说明" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：推荐官用户信息</li> <li>传输方式：GET</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/UserInfo</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式"><a href="#请求参数格式" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers"><a href="#请求头headers" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">QWN0QXBpfDZjYXRyZW9mMGpwbzM4ZWI0MElINDY1ZGtsZnVv</td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明："><a href="#字段说明：" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例"><a href="#使用实例" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/UserInfo
+</code></pre></div><ul><li>返回参数示例：成为推荐官之前</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ActInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;试用推荐官&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WebId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0b5dda016b714dc5b43bc10faf5ced1b&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RuleString&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://w2.lifevc.com/specialv2/special.html?actcode=shiytjgrules&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RemainingAmout&quot;</span><span class="token operator">:</span> <span class="token number">4173200</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BannerImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/799c5bd2737c4ca5966ff233b4bc5a9c.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ApplyImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/ecdcfab1056b4118af5787979c541813.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WithdrawCount&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">100.0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ActStartTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-02-22 22:22:22.000&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ActEndTime&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;IsBindWX&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Limery&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/bQu2WKEhQMOF5lvG3IBL8A3cn6uwjZoTd97Ap2icQcubLAS5Tibqic3qGe5w23icNQiazvv0o4tdicLibOx9SMffE1Cww/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;IsTrialReffer&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:37:21.919&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>成为推荐官之后</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ActInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;试用推荐官&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WebId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0b5dda016b714dc5b43bc10faf5ced1b&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ApplyImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/ecdcfab1056b4118af5787979c541813.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WithdrawCount&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">100.0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ActStartTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-02-22 22:22:22.000&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ActEndTime&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ShareTitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;送你个免费试用礼包！丽芙家居的东西还不错，我经常买！&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ShareDescription&quot;</span><span class="token operator">:</span> <span class="token string">&quot;买家居，选丽芙，一站购齐最省心！&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ShareImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/5778aba200a845db92506014e85c6b81.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ShareUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://w2.lifevc.com/h5activity/index.html&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BannerImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/799c5bd2737c4ca5966ff233b4bc5a9c.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RemainingAmout&quot;</span><span class="token operator">:</span> <span class="token number">4173200</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;DescriptionImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/a625752908054c2d8ccd9d76022f4c70.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UIJson&quot;</span><span class="token operator">:</span> <span class="token string">&quot;{\&quot;BrandImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/e25b0d7407be41709e00b6d9296ff9a6.png\&quot;,\&quot;WxTitle\&quot;:\&quot;免费试用礼包\&quot;,\&quot;successImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/af99b017ba9f4c19a4b9257d5816964f.png\&quot;,\&quot;BeforReceiveImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/9cf9962d287a4a4ba7de88a3924e14bd.png\&quot;,\&quot;GifReceiveImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/9a92fdbb60a248828f032335c75c2511.gif\&quot;,\&quot;ShareImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/4a7c8e9c49f340ea8c45eb6161072981.png\&quot;,\&quot;GifShareImage\&quot;:\&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/61f0230ded794b12bdd45bfbd06cce4b.gif\&quot;}&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ActivityImage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.lifevccdn.com//Upload/AppCategoryBanner/1acc6e9dc5ce40608cda41c62642242d.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;MaxWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">500.0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RuleString&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://w2.lifevc.com/specialv2/special.html?actcode=shiytjgrules&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RaidersString&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Coupons&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;CouponType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;SortType&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;CouponList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">518</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">517</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">516</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;CouponType&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;SortType&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;CouponList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">1416</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">1417</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;GroupId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token number">1430</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;IsReceive&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;IsCanReceive&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;IsBindWX&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Limery&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/bQu2WKEhQMOF5lvG3IBL8A3cn6uwjZoTd97Ap2icQcubLAS5Tibqic3qGe5w23icNQiazvv0o4tdicLibOx9SMffE1Cww/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;IsTrialReffer&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WebId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;882931c250784420a2b4f5b5c391cd5e&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;CanWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessRefferList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NotConfirmList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NotOrderList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18513256401&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://i1.lifevccdn.com//upload/user/face/userface-78498899f5.jpg&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.07.08 21:20:40&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;勿忘初心&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Mph3n5YCbm8Ix25PxSTDWLPAr8zfafCUfntl09NmLjz3Yx44JOib9ILh0t1TQn3CWAJwWevGgbeKTZ61PEVSEoA/132&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.05 06:00:01&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;终会忘！&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/qYIqibSGuqs2TfkA5v0tyQXOk1wuFm76X38plE59qS94HhaspS2v49LBhBVkOj14J2AxlPACxav1dicXhRcLX5yg/132&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.05 20:54:57&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;好友&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://i.lifevccdn.com/images/defuser.jpg&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.06 18:40:19&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;好友&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://i.lifevccdn.com/images/defuser.jpg&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.06 18:59:58&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;好友&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://i.lifevccdn.com/images/defuser.jpg&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.06 19:08:18&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Onlyone&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ08N1O1afbQZDF3lNYlmX1CcXdic5cPh1IYtmHQx5Qww36qQ6hamMcnToFfdd9tG0SmDMwuE6eB3Q/132&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;ConfirmTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.06 19:27:49&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ReffererOrder&quot;</span><span class="token operator">:</span> <span class="token number">364</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;CanOpenRedPack&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:44:28.959&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2-申请成为推荐官"><a href="#_2-申请成为推荐官" class="header-anchor">#</a> 2.申请成为推荐官</h2> <p>===================</p> <h3 id="接口说明-2"><a href="#接口说明-2" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：申请成为推荐官</li> <li>传输方式：POST</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/Apply</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-2"><a href="#请求参数格式-2" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-2"><a href="#请求头headers-2" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">QWN0QXBpfDZjYXRyZW9mMGpwbzM4ZWI0MElINDY1ZGtsZnVv</td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-2"><a href="#字段说明：-2" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-2"><a href="#使用实例-2" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/Apply
+</code></pre></div><ul><li>返回参数示例：申请成功</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Limery&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/bQu2WKEhQMOF5lvG3IBL8A3cn6uwjZoTd97Ap2icQcubLAS5Tibqic3qGe5w23icNQiazvv0o4tdicLibOx9SMffE1Cww/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ReffererOrder&quot;</span><span class="token operator">:</span> <span class="token number">7</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:43:21.564&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>失败</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Error&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;AlertMsg&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;银卡及以上会员才可以参与&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:40:04.028&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-提现金额页用户信息"><a href="#_3-提现金额页用户信息" class="header-anchor">#</a> 3.提现金额页用户信息</h2> <p>===================</p> <h3 id="接口说明-3"><a href="#接口说明-3" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：提现金额页用户信息</li> <li>传输方式：GET</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/WithdrawAmoutUserInfo</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-3"><a href="#请求参数格式-3" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-3"><a href="#请求头headers-3" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-3"><a href="#字段说明：-3" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-3"><a href="#使用实例-3" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/WithdrawAmoutUserInfo
+</code></pre></div><ul><li>返回参数示例：有记录的</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;CanWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessWithdrawAmout&quot;</span><span class="token operator">:</span> <span class="token number">100.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;AllList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Amout&quot;</span><span class="token operator">:</span> <span class="token string">&quot;-100.00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.31 20:53:34&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;TypeName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;申请提现&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Amout&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90.00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.31 20:16:05&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;TypeName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;礼包领取奖励&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Amout&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.31 20:16:05&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;TypeName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;礼包领取奖励&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Amout&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.31 20:16:05&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;TypeName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;礼包领取奖励&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Amout&quot;</span><span class="token operator">:</span> <span class="token string">&quot;-100.00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020.08.31 20:53:34&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;TypeName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;申请提现&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;FailedList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:50:44.692&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>无记录的</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;CanWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessWithdrawAmout&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;AllList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;FailedList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:49:09.420&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-提现"><a href="#_4-提现" class="header-anchor">#</a> 4.提现</h2> <p>===================</p> <h3 id="接口说明-4"><a href="#接口说明-4" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：提现</li> <li>传输方式：POST</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/ApplyWithdraw</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-4"><a href="#请求参数格式-4" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-4"><a href="#请求头headers-4" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-4"><a href="#字段说明：-4" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-4"><a href="#使用实例-4" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/ApplyWithdraw
+</code></pre></div><ul><li>返回参数示例：成功</li></ul> <div class="language- extra-class"><pre class="language-text"><code>同之前
+</code></pre></div><ul><li>申请失败</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Error&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;AmountNotFull&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;申请失败，可提现金额不足100.0元&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Data&quot;</span><span class="token operator">:</span> <span class="token number">100.00</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 10:58:20.348&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5-拆红包"><a href="#_5-拆红包" class="header-anchor">#</a> 5.拆红包</h2> <p>===================</p> <h3 id="接口说明-5"><a href="#接口说明-5" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：拆红包</li> <li>传输方式：POST</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/OpenRedpack?id=3</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-5"><a href="#请求参数格式-5" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-5"><a href="#请求头headers-5" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-5"><a href="#字段说明：-5" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-5"><a href="#使用实例-5" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/OpenRedpack?id=3
+</code></pre></div><ul><li>返回参数示例：成功</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ResultMsg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;UserInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;CanWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;InProcessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">100.00</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SuccessWithdrawAmount&quot;</span><span class="token operator">:</span> <span class="token number">0.00</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 11:10:13.108&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-跑马灯"><a href="#_6-跑马灯" class="header-anchor">#</a> 6.跑马灯</h2> <p>===================</p> <h3 id="接口说明-6"><a href="#接口说明-6" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：跑马灯</li> <li>传输方式：GET</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/Marquee</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-6"><a href="#请求参数格式-6" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-6"><a href="#请求头headers-6" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-6"><a href="#字段说明：-6" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-6"><a href="#使用实例-6" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/Marquee
+</code></pre></div><ul><li>返回参数示例：</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;心***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/MpH3AGJ70BL4oFKIF9MCWmpcG6ZmF182KXbV8DoicK39ybycaX9fWeQFJfiaN10b6bb7PCQRibMJ1MIic20yn3hV7w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;欣***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/0jURB05XfQ1nxqCdSGbLZibLRiczKoeUiaglIuuBW8Rs1sm1JYG1e0vHxxNfm5KIqoZ9ibm2hLvCoZ0Yt9mRh3kNJw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;H***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/zhA6iactjDDLepUibEmlSbV3zsWmvpK7ia19MWlLEF2htXFVZBNQe5niaZyGRdbClnsEC7B6AAVZzg2XJZh3sicwHlQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;R***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/9DyRdqbawibscrFiciaF29EWCyAmgqbSRzUAbicPhzxJl2T3Hd3Aj06seibAzauia7pf0lFdVaRLZYHDjc0H5cdz4pibw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;茹***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ5gUpejVfCsW5jZicj5NCJic9xXyvRAkYHGqezooH2tFfAckyuykqiaNrBoFy9pdDtS6eFeqr0Sfe2A/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;欣***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqRwDMrWsEFUjeicdRXcBFDpetAYxWAcRG46hHyNqFPqK6k6e1v9DGLaNFODKl7moBy92lsyu1Vk6w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;O***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erZE6hMQFx7IuomYRsvRPBusr9aHULluefOyvS1hXUCHf4Wichw9MjAvYSn7pbDpypXgZialZKj9bMw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;月***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTItUBsYauh1cdD1BYDDvlqMG1RdibVCs2xqL1ykJkoWPYciczlItCNr3R9eic5xue3ycjGa1yZRNaa0g/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/e4oTBUa0bxaIvKiaORxEsIGLE0QcFGeW93BYOib73oXVAFrY2cqcDicz4xibOnAZMdLG7wPUeO9spXcPyJI3haQemQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;丽***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/xnbe85qria1yDQhw1V2D5BJkDHXiaF5ibYyH8O3xuvOpIHb0qKiafAZndj0uzia0CqQNxwy3IgeeQqzw8vwGEEic9cUg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;大***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJtcAHeIBZ3HXDvib5kyqbbQ2ibAWCFqKicumeCHrpib34BiaxO7CcEVzxCZWckAUKBR5tEagRZMVicaibPA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/NsWua1mEsYDwhGXfF0sTaEO88kKibDz8SfrhrB7lD5jat4wxoP4IFwoqaemQLVuZbDf57wd0NqJtcRwJcia8cicQw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eo08VnMVppIpnKIgF96MD6rYq0dG8U4Vr5ul2fYOkZowHmkqRRCfHl4CvhUHqWWAm9eVgKiaLRABHg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;晓***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/JbfdCH3KFZF9ziauMib7dEdZ4jnqp3gvxgOv4Vu4NRQXIccCuJodjLTXJq9trH3ret6A3VxicGqpmACZgZD6H0CmQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;爱***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eo2wRXrZLekUf80N6AZZXGve0A4S0j3BLHt0icfqxZj1ZSyXzKKOiaCZEfeziaBH79qTCrjeIbP2U5ag/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;颖***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/sQaWNDsB2LdStctC3j6nokKfKia04IheE0CmK8Gdq0yQF9hMnKt3MDPILMXP3icVx9ml1yamRrJad8ibOAwzMhFCg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;清***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJabsv6qz5FwQwtjVg6VYY8VY2lzJGInLOHNo2FuNCHKnaQ9tjupAwXEzRgTlQtIoTTS0DITN42oQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;日***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/8Io0icYNEspY5M6s9WoXHcZz6ZaiaO5DRmF9iaJmUgKHxn9WXRKyZgAhSgWd7ctCH5JqYFaNick2AKRfkxkPWUbrhw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/UdhP5EFBibO9AIyRoNNqyTeNtME1NcRmmJFq4zyictiaG1R2kzTTtYpL2QGLDqMReydTQJriaMgHAGMYJw614swrvQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIbwhpcBATbIt6KQ7kEFvex7ZMRnIXxvXwIFXZkZyV50msZHpGqTCgeIG7vRmbI2VSctcgmW6tHlw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;L***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqk98FKczkT4QuuRq0lnYsah3wTJ7E6iaBpWxoL7tmWAX0jVsEHUPkiaoa7q13ibl48l31jQVRH4n3hg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;明***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqbx6g6H6S8XRejaUnYMbq5AzPZzMHgtLeU4W4ZatEaTkjq7xAUc3ZicibWJ0Vvt5f8cHg0ha7lcxzA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erSMbOqovqVYNJuUAH6y9o6wa3LKV49iaODaSrw1RwomNlgyor5gfxoTR4FRaFwibw0XMrv6ZzjJZFg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;素***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/6EPPpbIE1ESQQOIjw60BNdggS5Yibg7JWWFvGkiceTr3CLCq0icpWNobCjMNX60Ks7OE7KSmia2ibobOdOrzVj7FJJQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ34JRIxDzF6Qy3xME4a0BJo4dvCMu0pXKGgXibQvO3ALp0cLJPeHbRyHUVNtMzOIVjxt8w82O3lGA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;马***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/N4wh9llhB5BXMYb0TEibE5eJJOqRCdwiaVt0GzR8mu3HW03BOYTBvMoOiauRjjC7G3rL4NGRBicuibmOvSdDich409ibw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/j8LTeVoibeibiaNibXUzZNAOWyRcw4fH4paR1S5pMRXMdqWmBF0zziaxwTJ554ZornzvDHWYfMx3ZHpeF4ITZqRNyaA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;雯***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erfkxaeoUXLbR5HHdDL45g4CLHhcCsTXnzI6sTVbABUwOX43YDbKicEm3iauW0A6AuKQ4K4qSaib4kBA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;陈***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/7kxEXDDofMnrvicRhPMhXxOr95cdjuX5icXyK9NSSsdiagDn1lExC1sPLJt9ReRcBClsrFeBSb2to6o1Dx9iaThGhw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;符***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/SAibn3GOmnYBaTIaUqLQickoxwbfeUys52MqgIehLaEZEia8iaWsrpBXJsZWQfOkDvA7peJaLwIyHoRsA85zUD7LtA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;竹***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqPZM4uQ2LItRQKicweJ8z40n8ZP310icfTxwQtEibnzicrN15gafSKNEsBJBuv4WJWp6c4lp59wUWwgw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;J***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKvlm8M9T8OwNtibFYzwzLIKwZibiaz7x7MyI9oGVJbuMyn0RxnDEEvrJvGIwszMprlms6FyLud4pPiaw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;S***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/5XpKR8cg74xricfZv8n9icps3UdnPYUsHKDgB7d9YJ6MAIibgDicqxEo7H1IlcLfQCmyySAZkeEtYFpf11hP4mYCDg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;宋***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/CGPstrvAXkjFicDg9KYQH9CeF2Hh0USBEpDmIGEpItz2OMFeRFJAnmAtqDQy8NR3qkzkWpdfc7iaKAiaGvSTTYB7A/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;解***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq0vTOMBPqwJ2ibnf8HHOeLwmfkmfgQhUYTdlCG3BR49HSibziczWJChS0z8sceaokdKo2E1MZgM2H9A/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;初***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Oy6r8so5DVfAsQRFkpcUvYbSJe62PufUWpSBW3kZibOic7ogbpwI0eJ8dATBXEm8ezLiaDYV4h5JDPcsq40A72uKA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;一***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL6bKWuDa4sbjaLEuPHr97SoZxbVJgtENZtSDl1MhrJIHHibPxdgXzG13bJsg9mfdPpIoPq5hIzb5w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;梦***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/FDYQqAONxfBM4r1jOsuwoZm5BWAffYviaZJ0nskdrkzLJuwBzSDGzjo5po4Lc5ibwTibPYY1Zv9iaicUqIl9Alaxnlg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;斯***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epddicLt5Hv0KSjw2ww6NrkaFavb7C3ibjveukyFjJjI2GPngOUyIREwweyqJ2JibTbsomfIMPuiaxnng/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;张***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKkkicgbHQOkdl0vQQqiaADlHKmib8ZVyDvSOPEj7HHf1QqFvibv4Eol1SPMAJn6KbZpiajicmiaTCehxL1Q/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;〆***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqfLQicy0icvMsCtvKGERnKWWOC2hpicYMnSM7SKRMazLIrCPWVWc0oZpibX0r6xviaSEYPj6N2q6IvAlg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;惠***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/QicTra5HbNExuMLPZgTzVWC1J2rwI9tgHPFsKoPniaR6T9uv4iaFtvskS7apAZQejp6cJwHCMoYjXOmQABv3HmP0w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;叶***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJTUcH8tvypMcuwiaqUibxpia2d17GmBlNx1kb6mmFfHhVTDia3xTkxIGJnIrfy6ZiaIiakp6Fh5jVRQQbA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;糖***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/sOYOOxpK7wN9PPPNOOd2mHsiabzJxgN0fT2rnrriawxGMwxHh5z2F0VR8LxykazzHtzIRkPFPnQsKUKIENvKXkicg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eohpItyibsAp2oNxy97kVKHZIFTk5RRu6eD0qTzryryV0qwt4lw5zJfI0aiaXn2FlRQAnXWeicuIQ1sw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;利***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0gbVISGnicpcr3HB6el3piaF3bscHnq9FcUr4qlM6Nz2SianXIg3tseo8UUYDtAFJdzpC3p5wQhZlTe9OVM2jFoQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/skK8bIFDzE9x9D9eiaQus1OU9xlH2Z0T0CMupJnGrxRXc1cX7ZKjJ1BpTyyPVAtIQPG4gI2awTEX5mgq5fCJ9Fg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;婷***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjfMfPUDyXmNgcAwUBVZ0CyC6rqRcz8Y5PrJ8rHGuVWXy5JuDib4zmQ6ngzUG566E7zXhCUQ6bJKA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ᝰ***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJFMOQBiaJJAPsN9R7Vg94sorIy9bHj5oHfaChrBXVSnJ5gkQgWl0PicfEuP2a6xTRHLjvs4W7YiaMyA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;沈***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eohpItyibsAp2jGibaek8tRsVszzEiaDGjpQRWib3IsBTKlLqu2J2YLcoOvnc7fsib5WrJ6pFffLatfzng/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;M***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLuM6pRjGXjA41HLZKiaKByn9MkdmlDjaPa2o5bsdSImpplgVgwaBW5KQsdhFKRe16FuLxE1d1uOKw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIqSkExvs7GfZbVib8VO1luXqJ2zR7E279WtNJaY8g2qxUCeKNX67lkgTv10WGjDmXquymU7omOt9Q/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;真***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ6SE29G1caIYSIic6kst6KnRjh4nwnyoJc1w7fgwSS4rWd8W7KM40dYDXSxpmwXSq3A77jxNnq5lw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ0F94uoYZQicZzbRsibeIlXabR7UDkesYCWickZ6UeIQZuzIOgntkZvMTvbEGjLgJUhO9bFZfJjaLEw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;爱***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIHyKKVXG4BjJe5tEQP8bM1amiagdZQFfEw4KnkWUTe2ZljCW3ibCrPpTk8sicWhQxwPkH50zGak9u9g/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;一***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep8AJ219RRenkb1PiafJ5zE04sThpRxb47icQKMyEzAfmeslliaibypgxTIM8I1uXtJXrM3nvbnwIWFiaA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;夏***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/2iblh0jo09Y7mg1vMVPyEJX3Xq2wJAjFHBzzIfLlxicldypx4WxibEh4OHxBFe0KbE1R5gEgEAhsVRy0QGFE8xDMA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/9BiceVZzBBJpJymR9LjelicsJS8L49giaMfhqicqqz9XCeTuCicuF9OGEMkxt0eAWdVaJ0IzVliaJXcJGycdzlrPJCtw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;阿***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q3auHgzwzM7ohvSicWG6mI5YbK3Cu4o64cU1DmibdLeueiczXH81NuyVrWB0O3p70RQkeBIKqy8kHbNibkbH4tTc0Q/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;苏***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL07ae6JcItQYwiabSnlkOyr7zibRuvZXf5wUDqviaSRSx8D99fxj0uCuRUfVHBI1uib7oygjqJlnDggg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;淡***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/kGyR667aC5RYP6pM6g9EKyo6CcHZABkknS8TlZwu6MNiau2EnGpEV687BYoJPILb374BYrZYuVzlvbjqtz8r9zQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;我***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ8vrQkiaS1fknpvKA9onmURicAmwNjoWbeq4kWsicgEu1sEiaDw1icxHLp2QH9fb1ElQTglfdjXcmhZKw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Y***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/L8xTgwjU5C1TF1omQ7EaJgTRqD5kwic4z1ia4rWpo1KpvfOA73cELX0ZZNssrGL2goSXLMhfLnKQAXYQwhgAxtLg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;琴***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEIbTwZ2VWaGgsOCuKdC1OTTVwM3JNyvSYnlPC4FOibWIw1z5AtfqcqEUTFvlnOgzlsG2Wibic1ZxWO3Q/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;苗***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL4pDKPJOaMNn6FAgecgo8PyCTibqEeiaMvogWicKFdvjVJXMPdxsiaVDK4sdgEVYKpicSaH7NXdSQcicpg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/kkg4WVFplgN2cDvekYEsaqAjHzLgupsr9icat9BqicicLpLSav0JwHv3MJJq2nEb28ia7nhykZ4cb4dIBLL5Yn4GUg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;、***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIicA4kkUBZKX6IB4FyQhU9VqSwZ764eYXlZzS9CTW6qYJUlYnVvhfUS76ND66XDWPBLeiawibJGzc4w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKoXtnv2qIWV6GkVoib9zuQy55kN2vGDtdic0FF1pYSQVoIkCLwF1QpMic0rF0ERhAFLcAnKJZiaj4tfA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;王***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIibTHeQYKnic4yuxSzzPu6iaVbrHbeVX0bh2Z3jocpaJZjiamS8ZOPHtGQ6mu8aHNZqY4RZM97suxcNQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;玲***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/TGCg7AplhQibcztxiaBCYia8Y4e1NNJicCpDjtoiaP3UOfmoZa27lNaicc9tErJdCvgD7yk6pibsrsZFREwvic6gvEYNZw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;海***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLgKibzSST7hPko70MicBicR9DZxzvdGviafqPZDmFZVBeU1tQUbA0JYH9xyFxbTb7pkt0ia8zmiaHGpadg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;独***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erdpKbFgRLnicjicEvWV0hH85d4mNUQ8J9n6C4vZAt8726LttAdTbqw0zCGxq08DMTQ0NLou530MEuQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;超***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKp70DaNwXvRFwatFDTLXp07zwGmPGdWpm6u5Ydc8ticTbZVthflNlUZMUH9icLkjMtpNPyjtpXc4LQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;黑***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLZjmhUBExfj12iaTibRU4sFGuAcWQMcl1ogaVxLlW0Aez2HqJfjZ8ibDHI68reQib5ic9ia1LtPcHhGvibg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/AIm1CQib0msJZVqRj0pRIPmRmQRoBB68o7G5MMt2KzN1CcBJ9rk6YpQ9q13r2sGj97iaynUfia766nickm3dTibq5NA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK6vju9pIyDtmQvBex3WCNGh77npU62vWfZn26VTqAho250h2icS6IJiavNc4s06IrKxBlPBibHM2NsQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;筱***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKbPy04717qMiczkSmjxqUecgZBeJkzSibmB4O91M0ibHnsJqU8KVqib37hC3A7E3JN8QFYz2nLmuxciag/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;糖***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/hogIh7fEhogPhwz1Qfsd0DqAMPwdoUiaMQAnjIDc2kzS0V5HLn5LdzvHbAOKxWSxGxLWErB4tibLyZaWTfeYlLwA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;清***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL2XuHauDG5ckuUR3nD4yqaWCo0XWNGdVicaXa3lko1UuAfibrFPaN77M1nFibL2xlz3d0wfrb4mtPRw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJnFD2bpUJQouiab8uARsgvLvdqMTSLibuh5yxWGanNgos5DN7cC5S4x6icGETlgj3gK0C3znReuibO6w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;李***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/qOf1gUGLsfTz2WZVibKEcyPg9InhB43K6iansRWxKuq9E91dKeFhxJM2ToJz8zAOlpk4EW6Xx2VTEQ3MOtpFyYdw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;红***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erOq5venaygDpicREyAeyE8PicmSLEoicgI7XdcdnuibISPyGSsS7dN0JreBZaEPIzsV0ExBAPFsJhB4g/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;B***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DIzCuicXIibibGLYK8xc2ZmPxQVicYZy802r2gQricrGfOzjIfiaMiaibJB4z4ECaWJnkpQSibaStbCd1ArmByTmppc6hyw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;魔***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/SLZxIsmIDiacs42mfLTic61jVNkzibXwsCsib4VxoyEdJmrz3DfXsKDoicBXjFuxWwWs9kXbjRNibTYlMd97YWtWrXcQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoMd3W1ULAfIwFqiaw7nLlLy3AocvzL3YJ2z10J0q8CoHCR3WOsE9H814NdOqyKiaKhXv3L5dvCnQTQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;心***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/9ibt6ey8NAgxC85Bk5tmI2jARqCKBbk9hS8SmConwTL6fuI2fw30n2bl5bng9p48l9NMicHktCPUvtZqpicCATiaxQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;晓***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLJzrtHs9DeaEulVScMdwOGMOGHCdqBfDcBy0ib4tY5L3lozJBa70bact0edEua2w0cjPF5rb6FACg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;燕***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/lO7ibyLpOOBWe4q5sMGJQXFm4a2kLAPpLUJcHN7Uib16UG2Xv0voBnpmEI9QcX2Cicazgqmyxh1jvPwXIQs9ciaEzw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;马***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Hhe8HsJYTAJ0mtp9icK77wRBgk6ibuz4JVcXuf0SmTk9xaoApUrFGtyRoc3TWNAbUl1656AglCYZkK9Vfepzmp9g/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;芸***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIVy4eB1Ncz4KzXHTwKXlTs9pmdmjaZGJxFCrVsVUkGVAfP9Y1KnbaoVoLA4JR9p1KA97mmJt8aIQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;王***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKe4DjQWeXKdTC45vXrs6tibbZ7yla01cENcYLdjy4ibjk2iavUYOM49mRchmcdQibbrWzuxhacam7OmQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;艳***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLicKvwXnJa8jjocLaVeW3iaw0GrJhhHlzBM0tamVr5BwXCj8gS9TSB9NtcyvIibKXj4m2eTw3uHkvfA/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;L***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/icasFMa6SKbfNC5mwibKVEyHaib85LibZLPRkSdiauKtDyDZETM0R3CricHxIXayg2lpYVdYL6wwL3USeckIB6pdUrMw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;杨***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKlFhRMauhbwVQSjziboqZibhuu3ziazXxVCBBfwDRicKQoMhcgQ1Fyyj5U3J6a0vMMJT3KehCN5ot50Q/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;M***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/7SOblVZ7dNKFkggfsGYibR4mH6SYsza4O0CFNJ8WP27xBmjxsXnD35VCjkBXP41h4ib4N8I2UFyqQRWqviaAHdOibg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;�***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIicJdHFvex4cnGsHTlLxAKB1nTTPZMgD1BSKbZQeSunME0RzdZc2WbXKsbibqmG8ibn9KbXFlQdvUHg/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;花***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/NGcg3YBdmojeEaHy7ibpETdqtPaic3fJmiaTlXa7QfSgDSaCCMxuo0TysfAAxBbmEVRRibuY0dQu3qiciaibrsSZMEzcw/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/WaoYibdE2lezL8iays50IXCbur2BR3Kx8THzuUICAJS0sDsOhxEAGIgsA7tdMUhC4XFYMaQquVicYz9qp9JnzWg9A/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;肥***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/cY6x5J4LKP54VOo6ZYBzASMgKYUKOsQjTIJiaYhgyzSUVubZ3FxlrTZgibTf0GTasiafZGhHWvF94nXeeAdztwM0w/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKlicKgCNuhqMtQ5yK04RTjBjMwqBXaToTnXjaicp6TGbgliaKnmcVRnb91lQepZGibwVLCMVUOhq0v2A/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;NickName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;丹***&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;UserFace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLXiaYTlV5iaq7BxiaianPSRegpA2fvKQLf0Q3OeVmJAPdsEVcgUfK1ZAMALAPhSibOF7kQwEdicEfwULqQ/132&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;提现了100元微信红包。&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 11:16:34.910&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7-领取限时礼包"><a href="#_7-领取限时礼包" class="header-anchor">#</a> 7.领取限时礼包</h2> <p>===================</p> <h3 id="接口说明-7"><a href="#接口说明-7" class="header-anchor">#</a> <strong>接口说明</strong></h3> <ol><li>接口名称：领取限时礼包</li> <li>传输方式：POST</li> <li>接口url</li></ol> <table><thead><tr><th style="text-align:center;"><strong>环境</strong></th> <th style="text-align:center;"><strong>请求连接</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">正式</td> <td style="text-align:center;">https://w2api.lifevc.com/Act/Trial/{actcode}/GiftReceive</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="请求参数格式-7"><a href="#请求参数格式-7" class="header-anchor">#</a> <strong>请求参数格式</strong></h3> <h3 id="请求头headers-7"><a href="#请求头headers-7" class="header-anchor">#</a> <strong>请求头Headers</strong></h3> <table><thead><tr><th style="text-align:center;"><strong>名称</strong></th> <th style="text-align:center;"><strong>类型</strong></th> <th style="text-align:center;"><strong>必填</strong></th> <th style="text-align:center;"><strong>说明</strong></th></tr></thead> <tbody><tr><td style="text-align:center;">Content-Type</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">请求方式，值=application/json</td></tr> <tr><td style="text-align:center;">ApiToken</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">ustr</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">用户身份标识， 取si</td></tr></tbody></table> <h3 id="字段说明：-7"><a href="#字段说明：-7" class="header-anchor">#</a> <strong>字段说明：</strong></h3> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><h3 id="使用实例-7"><a href="#使用实例-7" class="header-anchor">#</a> <strong>使用实例</strong></h3> <ul><li>访问示例：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://w2api.lifevc.com/Act/Trial/tuijianguan/GiftReceive
+</code></pre></div><ul><li>返回参数示例：成功</li></ul> <div class="language- extra-class"><pre class="language-text"><code>同之前
+</code></pre></div><ul><li>失败</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;Result&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;InnerData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Error&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GoPage&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;活动已结束&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://w2.lifevc.com/end.html&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ResultCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;DateTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-09-01 11:20:10.088&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/api/FansRank/" class="prev">接口文档</a></span> <span class="next"><a href="/docs/api/tuijianguan-v3/tuijianguan-v3-wx.html">微信端</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.b6d384de.js" defer></script><script src="/docs/assets/js/2.ffdb66c4.js" defer></script><script src="/docs/assets/js/36.5c93bdf4.js" defer></script>
+  </body>
+</html>

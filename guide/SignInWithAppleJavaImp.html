@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>实现服务端交互示例demo | Limery</title>
+    <meta name="description" content="欢迎!">
+    <link rel="icon" href="/docs/favicon.png">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.d863bf22.css" as="style"><link rel="preload" href="/docs/assets/js/app.b6d384de.js" as="script"><link rel="preload" href="/docs/assets/js/2.ffdb66c4.js" as="script"><link rel="preload" href="/docs/assets/js/45.8cecd56f.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.dc6279fc.js"><link rel="prefetch" href="/docs/assets/js/11.ceee348c.js"><link rel="prefetch" href="/docs/assets/js/12.fab59449.js"><link rel="prefetch" href="/docs/assets/js/13.60f5107c.js"><link rel="prefetch" href="/docs/assets/js/14.7f7e348e.js"><link rel="prefetch" href="/docs/assets/js/15.8e28be33.js"><link rel="prefetch" href="/docs/assets/js/16.576a0302.js"><link rel="prefetch" href="/docs/assets/js/17.6e39df8a.js"><link rel="prefetch" href="/docs/assets/js/18.1943ae8b.js"><link rel="prefetch" href="/docs/assets/js/19.5508bf7a.js"><link rel="prefetch" href="/docs/assets/js/20.d1200c34.js"><link rel="prefetch" href="/docs/assets/js/21.5478a8ab.js"><link rel="prefetch" href="/docs/assets/js/22.dc8c5432.js"><link rel="prefetch" href="/docs/assets/js/23.1d674969.js"><link rel="prefetch" href="/docs/assets/js/24.470569d1.js"><link rel="prefetch" href="/docs/assets/js/25.629d8d29.js"><link rel="prefetch" href="/docs/assets/js/26.0204c872.js"><link rel="prefetch" href="/docs/assets/js/27.8933170a.js"><link rel="prefetch" href="/docs/assets/js/28.bf23bcd3.js"><link rel="prefetch" href="/docs/assets/js/29.2e25fc55.js"><link rel="prefetch" href="/docs/assets/js/3.eeb6970b.js"><link rel="prefetch" href="/docs/assets/js/30.589dd9fb.js"><link rel="prefetch" href="/docs/assets/js/31.85941da4.js"><link rel="prefetch" href="/docs/assets/js/32.94cbee4c.js"><link rel="prefetch" href="/docs/assets/js/33.171bbaaa.js"><link rel="prefetch" href="/docs/assets/js/34.020ddec5.js"><link rel="prefetch" href="/docs/assets/js/35.835bfd50.js"><link rel="prefetch" href="/docs/assets/js/36.5c93bdf4.js"><link rel="prefetch" href="/docs/assets/js/37.92cf4e33.js"><link rel="prefetch" href="/docs/assets/js/38.a3e95851.js"><link rel="prefetch" href="/docs/assets/js/39.76fb2cc2.js"><link rel="prefetch" href="/docs/assets/js/4.65986612.js"><link rel="prefetch" href="/docs/assets/js/40.420380bb.js"><link rel="prefetch" href="/docs/assets/js/41.713fee93.js"><link rel="prefetch" href="/docs/assets/js/42.54fc0492.js"><link rel="prefetch" href="/docs/assets/js/43.0e663909.js"><link rel="prefetch" href="/docs/assets/js/44.7dfb3295.js"><link rel="prefetch" href="/docs/assets/js/46.787d6e84.js"><link rel="prefetch" href="/docs/assets/js/5.148bb49f.js"><link rel="prefetch" href="/docs/assets/js/6.2c6a4780.js"><link rel="prefetch" href="/docs/assets/js/7.95ad2806.js"><link rel="prefetch" href="/docs/assets/js/8.2ce2d0ed.js"><link rel="prefetch" href="/docs/assets/js/9.096f8743.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.d863bf22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Limery</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link router-link-active">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link router-link-active">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>apple login</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/guide/SignInWithApple.html" class="sidebar-link">Sign In With Apple 从登陆到服务器验证</a></li><li><a href="/docs/guide/SignInWithAppleJavaImp.html" class="active sidebar-link">实现服务端交互示例demo</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="实现服务端交互示例demo"><a href="#实现服务端交互示例demo" class="header-anchor">#</a> 实现服务端交互示例demo</h1> <p><code>java</code>
+github:<a href="https://github.com/douxindong/SignInWithApple.git" target="_blank" rel="noopener noreferrer">SignInWithApple<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zhaouri<span class="token punctuation">.</span>applelogin<span class="token punctuation">.</span>controller</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token annotation punctuation">@Slf4j</span>
+<span class="token annotation punctuation">@RestController</span>
+<span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HomeController</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token class-name">Jws</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Claims</span><span class="token punctuation">&gt;</span></span> claims<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">return</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token comment">//    @RequestMapping(&quot;/err&quot;)</span>
+<span class="token comment">//    public HttpResult err() {</span>
+<span class="token comment">//         HttpResult httpResult = new HttpResult();</span>
+<span class="token comment">//         httpResult.setCode(4);</span>
+<span class="token comment">//         httpResult.setMsg(&quot;Error&quot;);</span>
+<span class="token comment">//         HashMap map = new HashMap&lt;String,String&gt;();</span>
+<span class="token comment">//         map.put(&quot;innnerData&quot;,'a');</span>
+<span class="token comment">//        httpResult.setData(map);</span>
+<span class="token comment">//         return httpResult;</span>
+<span class="token comment">//    }</span>
+
+<span class="token comment">//     @RequestMapping(&quot;/error&quot;)</span>
+<span class="token comment">//     public Object errors() {</span>
+<span class="token comment">////         HttpResult httpResult = new HttpResult();</span>
+<span class="token comment">//</span>
+<span class="token comment">////         httpResult.setCode(4);</span>
+<span class="token comment">////         httpResult.setMsg(&quot;Error&quot;);</span>
+<span class="token comment">////         return httpResult;</span>
+<span class="token comment">//         return &quot;error&quot;;</span>
+<span class="token comment">//     }</span>
+
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/Decode&quot;</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@ResponseBody</span>
+    <span class="token keyword">public</span> <span class="token class-name">HttpResult</span> <span class="token class-name">Decode</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span><span class="token string">&quot;jwt&quot;</span><span class="token punctuation">)</span> <span class="token keyword">final</span> <span class="token class-name">String</span> jwt<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">UnsupportedEncodingException</span><span class="token punctuation">{</span>
+        <span class="token keyword">final</span> <span class="token class-name">HttpResult</span> httpResult <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HttpResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        httpResult<span class="token punctuation">.</span><span class="token function">setCode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        httpResult<span class="token punctuation">.</span><span class="token function">setMsg</span><span class="token punctuation">(</span><span class="token string">&quot;Param Error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//        final Jws&lt;Claims&gt; claim = jwtParser.parseClaimsJws(jwt);</span>
+<span class="token comment">//        System.out.printf(String.valueOf(claim));</span>
+
+
+        <span class="token keyword">return</span> httpResult<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 对前端传来的JWT字符串identityToken的第二部分进行解码
+     * 主要获取其中的aud和sub，aud大概对应ios前端的包名，sub大概对应当前用户的授权的openID
+     * @param identityToken
+     * @return  {&quot;aud&quot;:&quot;com.xkj.****&quot;,&quot;sub&quot;:&quot;000***.8da764d3f9e34d2183e8da08a1057***.0***&quot;,&quot;c_hash&quot;:&quot;UsKAuEoI-****&quot;,&quot;email_verified&quot;:&quot;true&quot;,&quot;auth_time&quot;:1574673481,&quot;iss&quot;:&quot;https://appleid.apple.com&quot;,&quot;exp&quot;:1574674081,&quot;iat&quot;:1574673481,&quot;email&quot;:&quot;****@qq.com&quot;}
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">JSONObject</span> <span class="token function">parserIdentityToken</span><span class="token punctuation">(</span><span class="token class-name">String</span> identityToken<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> identityToken<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;\\.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Base64</span> base64 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Base64</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> decode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span> <span class="token punctuation">(</span>base64<span class="token punctuation">.</span><span class="token function">decodeBase64</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> substring <span class="token operator">=</span> decode<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> decode<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;}&quot;</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">JSONObject</span> jsonObject <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parseObject</span><span class="token punctuation">(</span>substring<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span>  jsonObject<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/***
+     * 苹果登录校验
+     *
+     * @param jwt 苹果票据 很长很长的一串
+     * @param aud iOS包名 eg:com.xxx.xxx
+     * @param sub 苹果对应的唯一用户标识
+     * @return code 100、success 0、缺少参数 -1 apple identityToken expired -2 apple
+     *         identityToken illegal
+     */</span>
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/appleVerify&quot;</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@ResponseBody</span>
+    <span class="token keyword">public</span> <span class="token class-name">HttpResult</span> <span class="token function">appleVerify</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span><span class="token string">&quot;jwt&quot;</span><span class="token punctuation">)</span> <span class="token keyword">final</span> <span class="token class-name">String</span> jwt<span class="token punctuation">,</span> <span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span><span class="token string">&quot;aud&quot;</span><span class="token punctuation">)</span> <span class="token keyword">final</span> <span class="token class-name">String</span> aud<span class="token punctuation">,</span>
+                                  <span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span><span class="token string">&quot;sub&quot;</span><span class="token punctuation">)</span> <span class="token keyword">final</span> <span class="token class-name">String</span> sub<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">UnsupportedEncodingException</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">final</span> <span class="token class-name">HttpResult</span> httpResult <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HttpResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">StringUtils</span><span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>jwt<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token class-name">StringUtils</span><span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>aud<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token class-name">StringUtils</span><span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            httpResult<span class="token punctuation">.</span><span class="token function">setCode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            httpResult<span class="token punctuation">.</span><span class="token function">setMsg</span><span class="token punctuation">(</span><span class="token string">&quot;Param Error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> httpResult<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token class-name">Integer</span> result <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">final</span> <span class="token class-name">String</span> url <span class="token operator">=</span> <span class="token string">&quot;https://appleid.apple.com/auth/keys&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">final</span> <span class="token class-name">String</span> jsonData <span class="token operator">=</span> <span class="token class-name">HttpClientUtil</span><span class="token punctuation">.</span><span class="token function">httpGetRequest</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">final</span> <span class="token class-name">AppleKeys</span> appleKeys <span class="token operator">=</span> <span class="token class-name">JSONObject</span><span class="token punctuation">.</span><span class="token function">parseObject</span><span class="token punctuation">(</span>jsonData<span class="token punctuation">,</span> <span class="token class-name">AppleKeys</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 将json字符串转化为JSONObject</span>
+
+        <span class="token keyword">final</span> <span class="token class-name">Base64</span> base64 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Base64</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>base64<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span><span class="token string">&quot;eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLmxpZmV2Yy5pb3NBcHAiLCJleHAiOjE1OTc2MzYwNTQsImlhdCI6MTU5NzYzNTQ1NCwic3ViIjoiMDAwMjc3LjAwOWIxMzM2ZjE4YTQ5MjQ5M2E0MTAxNjZhZmMyODQxLjA0MDQiLCJhdF9oYXNoIjoiN0pqRnROWEdTXzFCVEw1QlU3Zlo0ZyIsImVtYWlsIjoiZG91eGluZG9uZ0BpY2xvdWQuY29tIiwiZW1haWxfdmVyaWZpZWQiOiJ0cnVlIn0&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;UTF-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">String</span> n <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> ee <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> as <span class="token operator">=</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>jwt<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>as<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>jwt<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>appleKeys<span class="token punctuation">.</span><span class="token function">getKeys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 获得jsonArray的第一个元素</span>
+            <span class="token keyword">final</span> <span class="token class-name">Keys</span> keys <span class="token operator">=</span> appleKeys<span class="token punctuation">.</span><span class="token function">getKeys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            n <span class="token operator">=</span> keys<span class="token punctuation">.</span><span class="token function">getN</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            ee <span class="token operator">=</span> keys<span class="token punctuation">.</span><span class="token function">getE</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//            log.info(&quot;[苹果登录日志]jwt:{},aud:{},sub:{}&quot;, jwt, aud, sub);</span>
+        <span class="token punctuation">}</span>
+<span class="token comment">//        for (keys:appleKeys.getKeys()) {</span>
+<span class="token comment">//            if ()</span>
+<span class="token comment">//        }</span>
+<span class="token comment">//        System.out.printf();</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">final</span> <span class="token class-name">PublicKey</span> kPublicKey <span class="token operator">=</span> <span class="token function">createPublicKey</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> ee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            result <span class="token operator">=</span> <span class="token function">verify</span><span class="token punctuation">(</span>kPublicKey<span class="token punctuation">,</span> jwt<span class="token punctuation">,</span> aud<span class="token punctuation">,</span> sub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                httpResult<span class="token punctuation">.</span><span class="token function">setCode</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                httpResult<span class="token punctuation">.</span><span class="token function">setMsg</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                httpResult<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>claims<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                httpResult<span class="token punctuation">.</span><span class="token function">setCode</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                httpResult<span class="token punctuation">.</span><span class="token function">setMsg</span><span class="token punctuation">(</span><span class="token string">&quot;fail&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// log.info(&quot;获取公钥结果:&quot; + result + &quot;;&quot; + kPublicKey.toString());</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">NoSuchAlgorithmException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// TODO Auto-generated catch block</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">InvalidKeySpecException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// TODO Auto-generated catch block</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> httpResult<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">RSAPublicKeySpec</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">String</span> n<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">String</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">final</span> <span class="token class-name">BigInteger</span> modulus <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token class-name">Base64</span><span class="token punctuation">.</span><span class="token function">decodeBase64</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">final</span> <span class="token class-name">BigInteger</span> publicExponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token class-name">Base64</span><span class="token punctuation">.</span><span class="token function">decodeBase64</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">RSAPublicKeySpec</span><span class="token punctuation">(</span>modulus<span class="token punctuation">,</span> publicExponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">verify</span><span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">PublicKey</span> key<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">String</span> jwt<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">String</span> audience<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">String</span> subject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">final</span> <span class="token class-name">JwtParser</span> jwtParser <span class="token operator">=</span> <span class="token class-name">Jwts</span><span class="token punctuation">.</span><span class="token function">parser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setSigningKey</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jwtParser<span class="token punctuation">.</span><span class="token function">requireIssuer</span><span class="token punctuation">(</span><span class="token string">&quot;https://appleid.apple.com&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jwtParser<span class="token punctuation">.</span><span class="token function">requireAudience</span><span class="token punctuation">(</span>audience<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jwtParser<span class="token punctuation">.</span><span class="token function">requireSubject</span><span class="token punctuation">(</span>subject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">final</span> <span class="token class-name">Jws</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Claims</span><span class="token punctuation">&gt;</span></span> claim <span class="token operator">=</span> jwtParser<span class="token punctuation">.</span><span class="token function">parseClaimsJws</span><span class="token punctuation">(</span>jwt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>claim<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>claim <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> claim<span class="token punctuation">.</span><span class="token function">getBody</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span><span class="token string">&quot;auth_time&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+                claims <span class="token operator">=</span> claim<span class="token punctuation">;</span>
+
+<span class="token comment">//                log.info(&quot;[Apple登录解密结果]header:{},body:{},signature:{}&quot;, claim.getHeader(), claim.getBody(),</span>
+<span class="token comment">//                        claim.getSignature());</span>
+
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">ExpiredJwtException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment">//            log.error(&quot;apple identityToken expired&quot;);</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment">//            log.error(&quot;apple identityToken illegal&quot;);</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 从hex string生成公钥
+     *
+     * @param stringN
+     * @param stringE
+     * @return 构造好的公钥
+     * @throws NoSuchAlgorithmException
+     * @throws InvalidKeySpecException
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">PublicKey</span> <span class="token function">createPublicKey</span><span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">String</span> stringN<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">String</span> stringE<span class="token punctuation">)</span>
+            <span class="token keyword">throws</span> <span class="token class-name">NoSuchAlgorithmException</span><span class="token punctuation">,</span> <span class="token class-name">InvalidKeySpecException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">// BigInteger N = new BigInteger(stringN, 16); // hex base</span>
+            <span class="token comment">// BigInteger E = new BigInteger(stringE, 16); // hex base</span>
+
+            <span class="token keyword">final</span> <span class="token class-name">BigInteger</span> modulus <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token class-name">Base64</span><span class="token punctuation">.</span><span class="token function">decodeBase64</span><span class="token punctuation">(</span>stringN<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">final</span> <span class="token class-name">BigInteger</span> publicExponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token class-name">Base64</span><span class="token punctuation">.</span><span class="token function">decodeBase64</span><span class="token punctuation">(</span>stringE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">final</span> <span class="token class-name">RSAPublicKeySpec</span> spec <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RSAPublicKeySpec</span><span class="token punctuation">(</span>modulus<span class="token punctuation">,</span> publicExponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">final</span> <span class="token class-name">KeyFactory</span> kf <span class="token operator">=</span> <span class="token class-name">KeyFactory</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token string">&quot;RSA&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> kf<span class="token punctuation">.</span><span class="token function">generatePublic</span><span class="token punctuation">(</span>spec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">final</span> <span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>接口：
+http://10.99.68.30:8088/appleVerify  GET</p> <div class="language- extra-class"><pre class="language-text"><code>请求参数：
+jwt:eyJraWQiOiI4NkQ4OEtmIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLmxpZmV2Yy5pb3NBcHAiLCJleHAiOjE1OTc2MzU3OTQsImlhdCI6MTU5NzYzNTE5NCwic3ViIjoiMDAwMjc3LjAwOWIxMzM2ZjE4YTQ5MjQ5M2E0MTAxNjZhZmMyODQxLjA0MDQiLCJjX2hhc2giOiJ1S2g4R3VJQ0pTR0Y0Q2phQ1FjeFBBIiwiZW1haWwiOiJkb3V4aW5kb25nQGljbG91ZC5jb20iLCJlbWFpbF92ZXJpZmllZCI6InRydWUiLCJhdXRoX3RpbWUiOjE1OTc2MzUxOTQsIm5vbmNlX3N1cHBvcnRlZCI6dHJ1ZX0.Cmy5CgYiS6SV0Y5KLp9PJg8uXdRYs6Py8M1CXLhZZP-Ac-4AQJXh9dMT7YJXbi3J1Yj9WEHXF2uYAxRv-M54FP9zq9nLtxCFQfkBJc2-i2aSG1E_kLJU1R4PQKljUKRC-dMrv68hfwziJ7DoCCb5CwSZxdiimlihW_1gx3jiWTTbcjlouCJZy07xPtxBNON44d0gkG4rTQzhhstfX0vuK6DWDZu6K_rqDwRDYFOo3r9g8SVcpB93--IY0-sDNK5XZA04k1jS6V4ZIqW-DWqrbnEtpfERHE_9JrFCg8iiLMGNvUSiAZFalNVBzab7LQAVQbihJ1SaM1-tOpZQOn6G2w
+aud:com.lifevc.iosApp
+sub:000277.009b1336f18a492493a410166afc2841.0404
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;header&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;kid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eXaunmL&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;alg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RS256&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;iss&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://appleid.apple.com&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;aud&quot;</span><span class="token operator">:</span> <span class="token string">&quot;com.lifevc.iosApp&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;exp&quot;</span><span class="token operator">:</span> <span class="token number">1597378463</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;iat&quot;</span><span class="token operator">:</span> <span class="token number">1597377863</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;sub&quot;</span><span class="token operator">:</span> <span class="token string">&quot;000277.009b1336f18a492493a410166afc2841.0404&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;c_hash&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EcDwyvs9Ja8EdYoFYCqhOQ&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;douxindong@icloud.com&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;email_verified&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;auth_time&quot;</span><span class="token operator">:</span> <span class="token number">1597377863</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;nonce_supported&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;real_user_status&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;signature&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uLFfVB2-VHvGauQT6Pp2rjdSoL99l_pkpZXFAP_B__4Bb4oTM0gBlHIkieZAoECFphfcE-o_zX79VH6yIs9L7tMHORRjcw4uwRbuu99JZlxqXWQZXDhBinmfQWVFypJLsqz4dvhzHL8ywaXH9M0BdlmW5gghB8K8X9VTNHrK5ogRQH92Aj-y2KQJxakrFKdnuTm_NlDIcH--D83cZ9-0Lmh6xTRo-XE1FdyTXlzM_Cayncd1qi9xnTDfeGAfzoLxTNyHgjzlLOUbZiK5pNU19an-XRYBqjvEEdFc9MW1bVTZAck6xQD81yl2SS0YPlT51PFp2A_66fr4aw3j2MYs-A&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>code，token授权方式：较简单代码未实现
+接口：https://appleid.apple.com/auth/token POST</p> <div class="language- extra-class"><pre class="language-text"><code>client_secret:eyJraWQiOiJTOVU5MjNNNEo3IiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiI3TFU0UEVDMlJOIiwiaWF0IjoxNTk3NjM1MjEwLCJleHAiOjE2MTMxODcyMTAsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ubGlmZXZjLmlvc0FwcCJ9.VGLEYV00fTX-2g_e0of_f-rRxFnMSvWsBCvcvjf6nnRu0TDDENUpo3-rRzjyXltsqXHega4SViCU-wthk0P_5Q
+client_id:com.lifevc.iosApp
+code:c056485048680478a9a0b36d891c4e99b.0.nsxx.TA7y-KyrlbRDL2ti6IXteA
+grant_type:authorization_code
+refresh_token:ra7882ca192ca4bd3a221a60b44148f14.0.msxx.aS-IIqT_AFyQUeHLtXDTIQ
+//grant_type:refresh_token
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;access_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ae920b9fba9314c138f9bca02ff165f95.0.msxx.u97aeotTYDpL9O98YzFR3w&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;token_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bearer&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;expires_in&quot;</span><span class="token operator">:</span> <span class="token number">3600</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;refresh_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ra7882ca192ca4bd3a221a60b44148f14.0.msxx.aS-IIqT_AFyQUeHLtXDTIQ&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyJraWQiOiJlWGF1bm1MIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLmxpZmV2Yy5pb3NBcHAiLCJleHAiOjE1OTc2MzU5NjksImlhdCI6MTU5NzYzNTM2OSwic3ViIjoiMDAwMjc3LjAwOWIxMzM2ZjE4YTQ5MjQ5M2E0MTAxNjZhZmMyODQxLjA0MDQiLCJhdF9oYXNoIjoiNDNKSElIbTJWM0NMV2I4RmpTWHF3dyIsImVtYWlsIjoiZG91eGluZG9uZ0BpY2xvdWQuY29tIiwiZW1haWxfdmVyaWZpZWQiOiJ0cnVlIiwiYXV0aF90aW1lIjoxNTk3NjM1MTk0LCJub25jZV9zdXBwb3J0ZWQiOnRydWV9.Wym3wOhaQwUhuSRWByjud9rD16YhMlxtyVcCutiQDzv549nZJqei5F-COuQZXOrrBliiFCGgNoXhaBQtoac-F3DXHm4yCohkA2oY--4Sxl7t8O5ETBQOZuz-ZX6YQ_eSLR0wrtJJbMrRqBlner-dapGV-28w2Rmw4kA9oSfra5NnJgsFtobOhXBu3THXOBmb5QP9tXeLiEY6k3wnY2cxnEjhVhLdZjKgL9emIaR6RFKmlSUo50kkRfTeuIaZ7gAJDno3L4lrfs0N0EbvceHmwOceF34CFWxDbMpbTkiabUvwQAkqI1ylSB0Ld1xfIxE9txH91bUIxMaXkgmjbTHoWA&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/guide/SignInWithApple.html" class="prev">Sign In With Apple 从登陆到服务器验证</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.b6d384de.js" defer></script><script src="/docs/assets/js/2.ffdb66c4.js" defer></script><script src="/docs/assets/js/45.8cecd56f.js" defer></script>
+  </body>
+</html>

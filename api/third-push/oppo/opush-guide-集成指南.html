@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JPush SDK OPPO通道集成指南 | Limery</title>
+    <meta name="description" content="欢迎!">
+    <link rel="icon" href="/docs/favicon.png">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.d863bf22.css" as="style"><link rel="preload" href="/docs/assets/js/app.b6d384de.js" as="script"><link rel="preload" href="/docs/assets/js/2.ffdb66c4.js" as="script"><link rel="preload" href="/docs/assets/js/31.85941da4.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.dc6279fc.js"><link rel="prefetch" href="/docs/assets/js/11.ceee348c.js"><link rel="prefetch" href="/docs/assets/js/12.fab59449.js"><link rel="prefetch" href="/docs/assets/js/13.60f5107c.js"><link rel="prefetch" href="/docs/assets/js/14.7f7e348e.js"><link rel="prefetch" href="/docs/assets/js/15.8e28be33.js"><link rel="prefetch" href="/docs/assets/js/16.576a0302.js"><link rel="prefetch" href="/docs/assets/js/17.6e39df8a.js"><link rel="prefetch" href="/docs/assets/js/18.1943ae8b.js"><link rel="prefetch" href="/docs/assets/js/19.5508bf7a.js"><link rel="prefetch" href="/docs/assets/js/20.d1200c34.js"><link rel="prefetch" href="/docs/assets/js/21.5478a8ab.js"><link rel="prefetch" href="/docs/assets/js/22.dc8c5432.js"><link rel="prefetch" href="/docs/assets/js/23.1d674969.js"><link rel="prefetch" href="/docs/assets/js/24.470569d1.js"><link rel="prefetch" href="/docs/assets/js/25.629d8d29.js"><link rel="prefetch" href="/docs/assets/js/26.0204c872.js"><link rel="prefetch" href="/docs/assets/js/27.8933170a.js"><link rel="prefetch" href="/docs/assets/js/28.bf23bcd3.js"><link rel="prefetch" href="/docs/assets/js/29.2e25fc55.js"><link rel="prefetch" href="/docs/assets/js/3.eeb6970b.js"><link rel="prefetch" href="/docs/assets/js/30.589dd9fb.js"><link rel="prefetch" href="/docs/assets/js/32.94cbee4c.js"><link rel="prefetch" href="/docs/assets/js/33.171bbaaa.js"><link rel="prefetch" href="/docs/assets/js/34.020ddec5.js"><link rel="prefetch" href="/docs/assets/js/35.835bfd50.js"><link rel="prefetch" href="/docs/assets/js/36.5c93bdf4.js"><link rel="prefetch" href="/docs/assets/js/37.92cf4e33.js"><link rel="prefetch" href="/docs/assets/js/38.a3e95851.js"><link rel="prefetch" href="/docs/assets/js/39.76fb2cc2.js"><link rel="prefetch" href="/docs/assets/js/4.65986612.js"><link rel="prefetch" href="/docs/assets/js/40.420380bb.js"><link rel="prefetch" href="/docs/assets/js/41.713fee93.js"><link rel="prefetch" href="/docs/assets/js/42.54fc0492.js"><link rel="prefetch" href="/docs/assets/js/43.0e663909.js"><link rel="prefetch" href="/docs/assets/js/44.7dfb3295.js"><link rel="prefetch" href="/docs/assets/js/45.8cecd56f.js"><link rel="prefetch" href="/docs/assets/js/46.787d6e84.js"><link rel="prefetch" href="/docs/assets/js/5.148bb49f.js"><link rel="prefetch" href="/docs/assets/js/6.2c6a4780.js"><link rel="prefetch" href="/docs/assets/js/7.95ad2806.js"><link rel="prefetch" href="/docs/assets/js/8.2ce2d0ed.js"><link rel="prefetch" href="/docs/assets/js/9.096f8743.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.d863bf22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Limery</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link router-link-active">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link router-link-active">Api</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese.html" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/docs/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/douxindong" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前言</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>月度超级粉丝榜</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/FansRank/" class="sidebar-link">接口文档</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>试用官V3</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/tuijianguan-v3/tuijianguan-v3.html" class="sidebar-link">app端</a></li><li><a href="/docs/api/tuijianguan-v3/tuijianguan-v3-wx.html" class="sidebar-link">微信端</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>试用官</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/shiyongguan/shiyongguan.html" class="sidebar-link">App端接口领取页面信息</a></li><li><a href="/docs/api/shiyongguan/shiyongguan-wx.html" class="sidebar-link">微信端接口领取页面信息</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Android极光VIP接入SDK文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/third-push/" class="sidebar-link">通道集成指南</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>趣视频</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/Video.html" class="sidebar-link">阿里短视频demo接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>LifeVC 短视频</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/appconfig.html" class="sidebar-link">LifeVC app配置接口</a></li><li><a href="/docs/api/AppDocument/videologin.html" class="sidebar-link">LifeVC 短视频接口</a></li><li><a href="/docs/api/AppDocument/videostatistical.html" class="sidebar-link">记录日志统计接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>H5活动接口</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/AppDocument/AppScreenAd.html" class="sidebar-link">获取App启动广告接口</a></li><li><a href="/docs/api/DivideOneMillion/UserInfo.html" class="sidebar-link">瓜分红包-用户信息接口</a></li><li><a href="/docs/api/DivideOneMillion/Receive.html" class="sidebar-link">瓜分红包-提现接口</a></li><li><a href="/docs/api/GreenCart/GreenCardAPI.html" class="sidebar-link">小绿卡送福接口-主页</a></li><li><a href="/docs/api/GreenCart/ConfigGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-制卡页</a></li><li><a href="/docs/api/GreenCart/CreatetGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-提交卡</a></li><li><a href="/docs/api/GreenCart/ShareGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-分享页</a></li><li><a href="/docs/api/GreenCart/ReceiveGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-领取</a></li><li><a href="/docs/api/GreenCart/MyListGreenCardAPI.html" class="sidebar-link">小绿卡送福接口-我的列表</a></li><li><a href="/docs/api/Report.html" class="sidebar-link">活动交互统计接入说明</a></li><li><a href="/docs/api/huiyuanquanyi.html" class="sidebar-link">权益领券接口</a></li><li><a href="/docs/api/Recived.html" class="sidebar-link">权益领券接口2</a></li><li><a href="/docs/api/vipactInfo.html" class="sidebar-link">VIP会员回馈-活动</a></li><li><a href="/docs/api/vipactjoin.html" class="sidebar-link">VIP会员回馈-参与</a></li><li><a href="/docs/api/vipfriendinfo.html" class="sidebar-link">VIP会员回馈-好友验证</a></li><li><a href="/docs/api/vipfriendzhu.html" class="sidebar-link">VIP会员回馈-好友助力</a></li><li><a href="/docs/api/viprecivefudai.html" class="sidebar-link">VIP会员回馈-领取福袋</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="jpush-sdk-oppo通道集成指南"><a href="#jpush-sdk-oppo通道集成指南" class="header-anchor">#</a> JPush SDK OPPO通道集成指南</h1> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p>在国内 Android 生态中，推送通道都是由终端与云端之间的长链接来维持，严重依赖于应用进程的存活状态。如今一些手机厂家会在自家 rom 中做系统级别的推送通道，再由系统分发给各个 app，以此提高在自家 rom 上的推送送达率。</p> <p>JPush SDK 为了尽可能提高开发者在各类 rom 上的推送送达率，对使用 ColorOS 的设备推送，自动切换到 OPPO 通道。同时，为了保证 SDK 的易用性，原本 JPush 的所有接口调用逻辑都不用修改，JPush 会对自身支持的功能做兼容。只需在 manifest 中配置上 OPPO SDK 必须的配置组件即可。</p> <h2 id="功能描述"><a href="#功能描述" class="header-anchor">#</a> 功能描述</h2> <ul><li><p>JPush 初始化的时候可选择是否初始化 OPush 通道。</p></li> <li><p>在 ColorOS 设备上 JPush 通道与 OPush 通道共存。</p></li> <li><p>OPush 通道初始化后支持 stopPush/resumePush 与 tag/alias这些 JPush 原有的功能，其它的 JPush 未支持的功能目前暂时还不可用。</p></li> <li><p>通知效果：</p> <ul><li><p>OPPO 通道不支持 ACTION_NOTIFICATION_RECEIVED 和 ACTION_NOTIFICATION_OPENED事件。</p></li> <li><p>点击通知，如果有指定跳转页面，则跳转到用户配置的activity，未配置则跳转到主页。</p></li></ul></li></ul> <p><em><strong>注：</strong></em> OPPO 推送目前支持 ColorOS3.1及以上的系统的oppo的机型，一加5/5t及以上机型，realme所有机型。。JPush 通过 HeytapPushManager.isSupportPush() 接口进行判断，对支持的机型，通知走 OPPO 通道，不支持则走极光通道。</p> <h2 id="手动配置集成步骤"><a href="#手动配置集成步骤" class="header-anchor">#</a> 手动配置集成步骤</h2> <p>主要步骤为：</p> <ul><li><p><a href="#1">1. 增加OPPO插件包及OPPO推送包</a></p></li> <li><p><a href="#2">2. 配置OPPO推送sdk所需要的权限</a></p></li> <li><p><a href="#3">3. 配置OPPO必须的组件</a></p></li> <li><p><a href="#4">4. 将OPPO_APPKEY、OPPO_APPID、OPPO_APPSECRET 替换为在OPPO后台注册对应该应用的AppKey/AppID/APPSecret</a></p></li></ul> <h4 id="_1-增加oppo插件包及oppo推送包"><a href="#_1-增加oppo插件包及oppo推送包" class="header-anchor">#</a> <h3 id="1">1. 增加OPPO插件包及OPPO推送包</h3></h4> <ul><li>将third-push目录下找到oppo目录，从libs中拷贝其中的jar包至工程的libs目录下。</li> <li>jar包说明：
+<ul><li>jpush-android-plugin-oppo-v3.x.x.jar : JPush 插件包</li> <li>com.heytap.msp-push-xxx.aar : OPPO 推送包</li></ul></li></ul> <p><em><strong>注1</strong></em>：极光集成 OPPO 通道在 JPush Android SDK 3.1.5 添加。
+<em><strong>注2</strong></em>：oppo推送包，在JPush 3.4.0之前为：com.coloros.mcssdk.jar。JPush 3.4.0适配OPPO SDK的升级，对应OPPO SDK更新为：mcssdk-2.0.2.jar。
+<em><strong>注3</strong></em>：JPush 3.3.9版本的JPush可仅更新3.4.0的oppo插件包即可，无需升级为JPush3.4.0。
+<em><strong>注4</strong></em>：oppo 推送包 v2.1.0 版本升级为 com.heytap.msp-push-2.1.0.aar，Jpush v3.6.8 开始支持，与之前版本不兼容
+<em><strong>注5</strong></em>：oppo 推送包 v2.1.0 只支持 Android 4.4 或以上版本的手机系统,minsdk 至少要求 19</p> <h4 id="_2-配置oppo推送sdk所需要的权限"><a href="#_2-配置oppo推送sdk所需要的权限" class="header-anchor">#</a> <h3 id="2">2. 配置OPPO推送sdk所需要的权限</h3></h4> <div class="language- extra-class"><pre class="language-text"><code> 		 &lt;uses-permission android:name=&quot;com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE&quot;/&gt;
+         &lt;uses-permission android:name=&quot;com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE&quot;/&gt;
+
+
+</code></pre></div><h4 id="_3-配置oppo必须的组件"><a href="#_3-配置oppo必须的组件" class="header-anchor">#</a> <h3 id="3">3. 配置OPPO必须的组件</h3></h4> <div class="language- extra-class"><pre class="language-text"><code>
+		 &lt;!-- since JPushv3.6.8 ，oppov2.1.0 oppo 核心功能--&gt;
+          &lt;service android:name=&quot;cn.jpush.android.service.PluginOppoPushService&quot;
+             android:permission=&quot;com.coloros.mcs.permission.SEND_MCS_MESSAGE&quot;&gt;
+             &lt;intent-filter&gt;
+                 &lt;action android:name=&quot;com.coloros.mcs.action.RECEIVE_MCS_MESSAGE&quot; /&gt;
+             &lt;/intent-filter&gt;
+         &lt;/service&gt;
+
+         &lt;!-- since JPushv3.6.8 ，oppov2.1.0 oppo 核心功能--&gt;
+         &lt;service
+             android:name=&quot;com.heytap.msp.push.service.DataMessageCallbackService&quot;
+             android:permission=&quot;com.heytap.mcs.permission.SEND_PUSH_MESSAGE&quot;&gt;
+ 
+             &lt;intent-filter&gt;
+                 &lt;action android:name=&quot;com.heytap.mcs.action.RECEIVE_MCS_MESSAGE&quot;/&gt;
+ 
+                 &lt;action android:name=&quot;com.heytap.msp.push.RECEIVE_MCS_MESSAGE&quot;/&gt;
+             &lt;/intent-filter&gt;
+         &lt;/service&gt; &lt;!--兼容Q版本--&gt;
+
+
+</code></pre></div><h4 id="_4-将oppo应用的-appkey-、appid-、appsecret-加上前缀“op-”，填入meta-data-标签中"><a href="#_4-将oppo应用的-appkey-、appid-、appsecret-加上前缀“op-”，填入meta-data-标签中" class="header-anchor">#</a> <h3 id="4">4. 将OPPO应用的 appkey 、appid 、appsecret 加上前缀“OP-”，填入meta-data 标签中</h3></h4> <div class="language- extra-class"><pre class="language-text"><code>
+	 &lt;meta-data android:name=&quot;OPPO_APPKEY&quot;
+	       android:value=&quot;OP-您的应用对应的OPPO的APPKEY&quot; /&gt;
+
+     &lt;meta-data android:name=&quot;OPPO_APPID&quot;
+            android:value=&quot;OP-您的应用对应的OPPO的APPID&quot; /&gt;
+
+     &lt;meta-data android:name=&quot;OPPO_APPSECRET&quot;
+            android:value=&quot;OP-您的应用对应的OPPO的APPSECRET&quot; /&gt;
+
+
+</code></pre></div><h4 id="_5-在工程的build-gradle文件中添加如下配置代码"><a href="#_5-在工程的build-gradle文件中添加如下配置代码" class="header-anchor">#</a> <h3 id="5">5. 在工程的build.gradle文件中添加如下配置代码</h3></h4> <div class="language- extra-class"><pre class="language-text"><code>dependencies {
+    ...
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    ...
+    implementation(name: 'com.heytap.msp-push-2.1.0', ext: 'aar')
+    ...  
+
+}
+android {
+    ...
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+</code></pre></div><h2 id="使用-jcenter-自动化集成步骤"><a href="#使用-jcenter-自动化集成步骤" class="header-anchor">#</a> 使用 JCenter 自动化集成步骤</h2> <ul><li>确认android studio的 Project 根目录的主 gradle 中配置了jcenter支持。（新建project默认配置就支持）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>	buildscript {
+		repositories {
+			jcenter()
+		}
+            ......
+	}
+
+	allprojets {
+		repositories {
+			jcenter()
+		}
+	}
+
+</code></pre></div><ul><li>在应用 module 的 gradle 中 dependencies 节点添加如下代码:</li></ul> <div class="language- extra-class"><pre class="language-text"><code>    dependencies {
+        compile 'cn.jiguang.sdk.plugin:oppo:3.6.8'
+    }
+
+</code></pre></div><ul><li>在应用 module 的 gradle 中 defaultConfig 节点添加如下代码:</li></ul> <div class="language- extra-class"><pre class="language-text"><code>    manifestPlaceholders = [
+
+        // 设置manifest.xml中的变量
+        OPPO_APPKEY : &quot;OP-您的应用对应的OPPO的APPKEY&quot;, // OPPO平台注册的appkey
+        OPPO_APPID : &quot;OP-您的应用对应的OPPO的APPID&quot;, // OPPO平台注册的appid
+        OPPO_APPSECRET: &quot;OP-您的应用对应的OPPO的APPSECRET&quot;//OPPO平台注册的appsecret
+
+    ]
+
+
+</code></pre></div><h2 id="opush-sdk的编译混淆问题"><a href="#opush-sdk的编译混淆问题" class="header-anchor">#</a> OPush SDK的编译混淆问题</h2> <p>如果使用了 proguard，需要在配置文件中加入，可以防止一个误报的 warning 导致无法成功编译。</p> <pre><code>-dontwarn com.coloros.mcsdk.**
+-keep class com.coloros.mcsdk.** { *; }
+    
+-dontwarn com.heytap.**
+-keep class com.heytap.** { *; }
+    
+-dontwarn com.mcs.**
+-keep class com.mcs.** { *; }
+</code></pre> <h2 id="通知内容长度兼容"><a href="#通知内容长度兼容" class="header-anchor">#</a> 通知内容长度兼容</h2> <h3 id="功能说明"><a href="#功能说明" class="header-anchor">#</a> 功能说明</h3> <p>由于 OPPO 官方的通知内容长度限制为200个字数以内（中英文都算一个），当通知内容（极光的“alert”字段的值）长度超过200字，OPPO 通道会推送失败。此时调用极光api推送通知，请在payload 中的 &quot;notification&quot; 的 &quot;android&quot; 节点的&quot;extras&quot;节点添加以下字段：</p> <h3 id="使用方式"><a href="#使用方式" class="header-anchor">#</a> 使用方式</h3> <h4 id="push-api-推送说明"><a href="#push-api-推送说明" class="header-anchor">#</a> Push API 推送说明</h4> <div align="center" class="table-d"><table border="1" width="100%"><tr bgcolor="#D3D3D3"><th>关键字</th> <th>类型</th> <th>示例</th> <th>说明</th></tr> <tr><td>oppns_content_forshort</td> <td>string</td> <td>&quot;short content&quot;</td> <td>通知内容（极光的“alert”字段）长度超过200个字时，请在此字段的值传入不超过200个字的通知内容。</td></tr></table></div> <p><em><strong>请求json示例：</strong></em></p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;platform&quot;: [
+        &quot;android&quot;
+    ],
+    &quot;audience&quot;: &quot;all&quot;,
+    &quot;notification&quot;: {
+        &quot;android&quot;: {
+            &quot;alert&quot;: &quot;在国内 Android 生态中，推送通道都是由终端与云端之间的长链接来维持，严重依赖于应用进程的存活状态。如今一些手机厂家会在自家 rom 中做系统级别的推送通道，再由系统分发给各个 app，以此提高在自家 rom 上的推送送达率。JPush SDK 为了尽可能提高开发者在各类 rom 上的推送送达率，对使用 ColorOS 的设备推送，自动切换到OPPO通道。同时，为了保证 SDK 的易用性，原本 JPush 的所有接口调用逻辑都不用修改,JPush 会对自身支持的功能做兼容.只需在manifest中配置上 OPPO SDK 必须的配置组件即可.&quot;,
+            &quot;title&quot;: &quot;概述&quot;,
+            &quot;uri_action&quot;: &quot;com.example.jpushdemo.OpenClickActivity&quot;,
+            &quot;extras&quot;: {
+                &quot;oppns_content_forshort&quot;: &quot;在国内 Android 生态中，推送通道都是由终端与云端之间的长链接来维持，严重依赖于应用进程的存活状态。&quot;
+            }
+        }
+
+    },
+    &quot;message&quot;: {
+        &quot;msg_content&quot;: &quot;自定义消息内容003&quot;
+    }
+}
+
+</code></pre></div><h2 id="点击通知跳转-activity"><a href="#点击通知跳转-activity" class="header-anchor">#</a> 点击通知跳转 Activity</h2> <h3 id="功能说明-2"><a href="#功能说明-2" class="header-anchor">#</a> 功能说明</h3> <p>OPPO 允许开发者在推送通知的时候传入自定义的 intent action 字符串，当用户点击了该通知，系统会根据 action 的值过滤出匹配的 Activity ，并打开 Activity，获取推送内容。若不配置，点击通知则直接打开应用主页。</p> <h3 id="使用方式-2"><a href="#使用方式-2" class="header-anchor">#</a> 使用方式</h3> <h4 id="push-api-推送说明-2"><a href="#push-api-推送说明-2" class="header-anchor">#</a> Push API 推送说明</h4> <p>在 push api 的 payload 中的 &quot;notification&quot; 的 &quot;android&quot; 节点下添加以下字段：</p> <div align="center" class="table-d"><table border="1" width="100%"><tr bgcolor="#D3D3D3"><th>关键字</th> <th>类型</th> <th>示例</th> <th>说明</th></tr> <tr><td>uri_action</td> <td>string</td> <td>&quot;com.example.jpushdemo.OpenClickActivity&quot;</td> <td>该字段用于指定开发者想要打开的 activity。值为该activity下您配置的特殊action name</td></tr></table></div> <p><em><strong>示例：</strong></em></p> <div class="language- extra-class"><pre class="language-text"><code>demo manifest 配置为：
+ &lt;!-- 点击通知时，要打开的 activity --&gt;
+        &lt;activity android:name=&quot;com.example.jpushdemo.OpenClickActivity&quot;
+            android:exported=&quot;true&quot;&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;com.example.jpushdemo.OpenClickActivity&quot;/&gt;
+            &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+
+请求json如下：
+{
+    &quot;platform&quot;: [
+        &quot;android&quot;
+    ],
+    &quot;audience&quot;: &quot;all&quot;,
+    &quot;notification&quot;: {
+        &quot;android&quot;: {
+            &quot;alert&quot;: &quot;在线alert003&quot;,
+            &quot;title&quot;: &quot;在线title003&quot;,
+            &quot;uri_action&quot;: &quot;com.example.jpushdemo.OpenClickActivity&quot;
+        }
+    },
+    &quot;message&quot;: {
+        &quot;msg_content&quot;: &quot;自定义消息内容003&quot;
+    }
+}
+</code></pre></div><p>####SDK 端配置</p> <h5 id="_1-在-androidmanifest-xml-中配置点击通知要打开的-activity"><a href="#_1-在-androidmanifest-xml-中配置点击通知要打开的-activity" class="header-anchor">#</a> 1. 在 AndroidManifest.xml 中配置点击通知要打开的 activity</h5> <div class="language- extra-class"><pre class="language-text"><code> &lt;activity android:name=&quot;您配置的activity&quot;
+            android:exported=&quot;true&quot;&gt;
+      &lt;intent-filter&gt;
+            &lt;action android:name=&quot;您配置的特殊action&quot;/&gt;
+            &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+       &lt;/intent-filter&gt;
+ &lt;/activity&gt;
+</code></pre></div><h5 id="_2-获取通知相关信息"><a href="#_2-获取通知相关信息" class="header-anchor">#</a> 2.获取通知相关信息</h5> <p>在您配置的 activity 中的onCreate方法中进行处理，获取通知信息。</p> <p>通过 getIntent().getExtras().getString(&quot;JMessageExtra&quot;) 获取到数据。获取到的数据是 JSON 字符串，通过解析可以获得通知相关内容。</p> <p>JSON 示例如下：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+	&quot;msg_id&quot;:&quot;123456&quot;,
+	&quot;n_content&quot;:&quot;this is content&quot;,
+	&quot;n_extras&quot;:{&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;},
+	&quot;n_title&quot;:&quot;this is title&quot;,
+	&quot;rom_type&quot;:0
+}
+</code></pre></div><p>JSON 内容字段说明：</p> <table><thead><tr><th>字段</th> <th>取值类型</th> <th>描述</th></tr></thead> <tbody><tr><td>msg_id</td> <td>String</td> <td>通过此key获取到通知的msgid</td></tr> <tr><td>n_title</td> <td>String</td> <td>通过此key获取到通知标题</td></tr> <tr><td>n_content</td> <td>String</td> <td>通过此key获取到通知内容</td></tr> <tr><td>n_extras</td> <td>String</td> <td>通过此key获取到通知附加字段</td></tr> <tr><td>rom_type</td> <td>byte</td> <td>通过此key获取到下发通知的平台。得到值说明：byte类型的整数， 0为极光，1为小米，2为华为，3为魅族，4为 OPPO，8为FCM。</td></tr></tbody></table> <p><em><strong>注：</strong></em> rom_type 用于点击事件的上报，一般情况下开发者只需要取到该字段的值用于上报，不需要关心具体取值。</p> <h5 id="_3-通知点击上报"><a href="#_3-通知点击上报" class="header-anchor">#</a> 3.通知点击上报</h5> <p>解析通知内容后，需主动调用接口来进行通知点击上报，上报接口如下：</p> <div class="language- extra-class"><pre class="language-text"><code>/**
+* context 上下文
+* msgId 消息ID
+* whichPushSDK 收到推送的平台，即 rom_type 字段的取值。
+**/
+JPushInterface.reportNotificationOpened(Context context, String msgId, byte whichPushSDK);
+</code></pre></div><p><em><strong>注：</strong></em> 点击上报必须传入正确的 whichPushSDK 参数，否则会造成统计数据错误。</p> <h5 id="_4-富媒体调整"><a href="#_4-富媒体调整" class="header-anchor">#</a> 4.富媒体调整</h5> <ul><li><p>为 PushActivity 增加 <code>&lt;action android:name=&quot;cn.jpush.android.ui.PushActivity&quot; /&gt;</code>。</p></li> <li><p>为 PopWinActivity 增加 <code>&lt;action android:name=&quot;cn.jpush.android.ui.PopWinActivity&quot; /&gt;</code>。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;activity
+     android:name=&quot;cn.jpush.android.ui.PushActivity&quot;
+     android:configChanges=&quot;orientation|keyboardHidden&quot;
+     android:theme=&quot;@android:style/Theme.NoTitleBar&quot;&gt;
+        &lt;intent-filter&gt;
+            &lt;action android:name=&quot;cn.jpush.android.ui.PushActivity&quot; /&gt;
+            &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+            &lt;category android:name=&quot;您的应用的包名&quot; /&gt;
+        &lt;/intent-filter&gt;
+&lt;/activity&gt;
+
+&lt;activity
+     android:name=&quot;cn.jpush.android.ui.PopWinActivity&quot;
+     android:configChanges=&quot;orientation|keyboardHidden&quot;
+     android:theme=&quot;@style/MyDialogStyle&quot;&gt;
+        &lt;intent-filter&gt;
+            &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+            &lt;category android:name=&quot;您的应用的包名&quot; /&gt;
+            &lt;action android:name=&quot;cn.jpush.android.ui.PopWinActivity&quot;/&gt;
+        &lt;/intent-filter&gt;
+&lt;/activity&gt;
+</code></pre></div><h5 id="_5-activity-示例代码"><a href="#_5-activity-示例代码" class="header-anchor">#</a> 5.Activity 示例代码</h5> <div class="language- extra-class"><pre class="language-text"><code>package com.example.jpushdemo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.TextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import cn.jpush.android.api.JPushInterface;
+
+/**
+ * Created by jiguang on 17/7/5.
+ */
+
+public class OpenClickActivity extends Activity {
+    private static final String TAG = &quot;OpenClickActivity&quot;;
+    /**消息Id**/
+    private static final String KEY_MSGID = &quot;msg_id&quot;;
+    /**该通知的下发通道**/
+    private static final String KEY_WHICH_PUSH_SDK = &quot;rom_type&quot;;
+    /**通知标题**/
+    private static final String KEY_TITLE = &quot;n_title&quot;;
+    /**通知内容**/
+    private static final String KEY_CONTENT = &quot;n_content&quot;;
+    /**通知附加字段**/
+    private static final String KEY_EXTRAS = &quot;n_extras&quot;;
+    private TextView mTextView;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mTextView = new TextView(this);
+        setContentView(mTextView);
+        handleOpenClick();
+    }
+
+
+    /**
+     * 处理点击事件，当前启动配置的Activity都是使用
+     * Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK
+     * 方式启动，只需要在onCreat中调用此方法进行处理
+     */
+    private void handleOpenClick() {
+        Log.d(TAG, &quot;用户点击打开了通知&quot;);
+        String data = null;
+        //获取华为平台附带的jpush信息
+        if (getIntent().getData() != null) {
+             data = getIntent().getData().toString();
+        }
+
+        //获取fcm、oppo、vivo、华硕、小米平台附带的jpush信息
+        if(TextUtils.isEmpty(data) &amp;&amp; getIntent().getExtras() != null){
+            data = getIntent().getExtras().getString(&quot;JMessageExtra&quot;);
+        }
+
+        Log.w(TAG, &quot;msg content is &quot; + String.valueOf(data));
+        if (TextUtils.isEmpty(data)) return;
+        try {
+            JSONObject jsonObject = new JSONObject(data);
+            String msgId = jsonObject.optString(KEY_MSGID);
+            byte whichPushSDK = (byte) jsonObject.optInt(KEY_WHICH_PUSH_SDK);
+            String title = jsonObject.optString(KEY_TITLE);
+            String content = jsonObject.optString(KEY_CONTENT);
+            String extras = jsonObject.optString(KEY_EXTRAS);
+            StringBuilder sb = new StringBuilder();
+            sb.append(&quot;msgId:&quot;);
+            sb.append(String.valueOf(msgId));
+            sb.append(&quot;\n&quot;);
+            sb.append(&quot;title:&quot;);
+            sb.append(String.valueOf(title));
+            sb.append(&quot;\n&quot;);
+            sb.append(&quot;content:&quot;);
+            sb.append(String.valueOf(content));
+            sb.append(&quot;\n&quot;);
+            sb.append(&quot;extras:&quot;);
+            sb.append(String.valueOf(extras));
+            sb.append(&quot;\n&quot;);
+            sb.append(&quot;platform:&quot;);
+            sb.append(getPushSDKName(whichPushSDK));
+            mTextView.setText(sb.toString());
+
+            //上报点击事件
+            JPushInterface.reportNotificationOpened(this, msgId, whichPushSDK);
+        } catch (JSONException e) {
+            Log.w(TAG, &quot;parse notification error&quot;);
+        }
+
+
+    }
+
+    private String getPushSDKName(byte whichPushSDK) {
+        String name;
+        switch (whichPushSDK){
+            case 0:
+                name = &quot;jpush&quot;;
+                break;
+            case 1:
+                name = &quot;xiaomi&quot;;
+                break;
+            case 2:
+                name = &quot;huawei&quot;;
+                break;
+            case 3:
+                name = &quot;meizu&quot;;
+                break;
+            case 4:
+            	name= &quot;oppo&quot;;
+            	break;
+            case 5:
+                name = &quot;vivo&quot;;
+                break;
+            case 6:
+                name = &quot;asus&quot;;
+                break;                
+            case 8:
+                name = &quot;fcm&quot;;
+                break;
+            default:
+                name = &quot;jpush&quot;;
+        }
+        return name;
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.b6d384de.js" defer></script><script src="/docs/assets/js/2.ffdb66c4.js" defer></script><script src="/docs/assets/js/31.85941da4.js" defer></script>
+  </body>
+</html>
