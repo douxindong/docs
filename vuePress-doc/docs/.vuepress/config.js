@@ -36,14 +36,45 @@ function getApiSidebar () {
         collapsable: false,
         children:[
         ]
-    },{
+    },
+        {
+            title: '月度超级粉丝榜',
+            collapsable: false,
+            children:[
+                'FansRank/'
+            ]
+        },
+        {
+            title: '试用官V3',
+            collapsable: false,
+            children:[
+                'tuijianguan-v3/tuijianguan-v3',
+                'tuijianguan-v3/tuijianguan-v3-wx'
+            ]
+        },
+        {
         title: '试用官',
         collapsable: false,
         children:[
             'shiyongguan/shiyongguan',
             'shiyongguan/shiyongguan-wx'
         ]
-    },{
+    },
+        {
+            title: 'Android极光VIP接入SDK文档',
+            collapsable: false,
+            children:[
+                'third-push/',
+                // 'third-push/厂商-JPush-Token回调说明',
+                // 'third-push/fcm/fcm-Push-guide-集成指南',
+                // 'third-push/huawei/huawei-Push-guide-集成指南',
+                // 'third-push/meizu/meizu-Push-guide-集成指南',
+                // 'third-push/oppo/opush-guide-集成指南',
+                // 'third-push/vivo/vivo-push-guide-集成指南',
+                // 'third-push/xiaomi/mipush-guide-集成指南',
+            ]
+        },
+        {
         title: '趣视频',
         collapsable: false,
         children:[

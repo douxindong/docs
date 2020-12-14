@@ -1,7 +1,7 @@
 # Sign In With Apple 从登陆到服务器验证
 ## 客户端
 关于手机端登录的代码，...，登录成功后， 返回的参数：
-<a data-fancybox title="images" href="http://i1.lifevccdn.com//Upload/AppCategoryBanner/d5e7c269a256447b82e929a3cf28fd04.png">![images](http://i1.lifevccdn.com//Upload/AppCategoryBanner/d5e7c269a256447b82e929a3cf28fd04.png)</a>
+<a data-fancybox title="images" href="http://i1.lifevccdn.com//Upload/AppCategoryBanner/3452b814c4c940aca35f413f97b59155.jpg">![images](http://i1.lifevccdn.com//Upload/AppCategoryBanner/3452b814c4c940aca35f413f97b59155.jpg)</a>
 
 授权成功：
 ```json5
@@ -9,8 +9,8 @@
     "appleIDCredential" : "<ASAuthorizationAppleIDCredential: 0x280014360 { userIdentifier: 000277.009b1336f18a492493a410166afc2841.0404, authorizedScopes: (\n) }>",
     "authorizationCode" : "c209fbde0f81d4df983164722f1a260f7.0.nsxx.xhJeNEk-CURzSAJfP5lgfQ",
     "email" : "douxindong@icloud.com",
-    "familyName" : "U7aa6",
-    "givenName" : "U5fc3U4e1c",
+    "familyName" : "\U7aa6",
+    "givenName" : "\U5fc3\U4e1c",
     "identityToken" : "eyJraWQiOiJlWGF1bm1MIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLmxpZmV2Yy5pb3NBcHAiLCJleHAiOjE1OTczNzg0NjMsImlhdCI6MTU5NzM3Nzg2Mywic3ViIjoiMDAwMjc3LjAwOWIxMzM2ZjE4YTQ5MjQ5M2E0MTAxNjZhZmMyODQxLjA0MDQiLCJjX2hhc2giOiJFY0R3eXZzOUphOEVkWW9GWUNxaE9RIiwiZW1haWwiOiJkb3V4aW5kb25nQGljbG91ZC5jb20iLCJlbWFpbF92ZXJpZmllZCI6InRydWUiLCJhdXRoX3RpbWUiOjE1OTczNzc4NjMsIm5vbmNlX3N1cHBvcnRlZCI6dHJ1ZSwicmVhbF91c2VyX3N0YXR1cyI6Mn0.uLFfVB2-VHvGauQT6Pp2rjdSoL99l_pkpZXFAP_B__4Bb4oTM0gBlHIkieZAoECFphfcE-o_zX79VH6yIs9L7tMHORRjcw4uwRbuu99JZlxqXWQZXDhBinmfQWVFypJLsqz4dvhzHL8ywaXH9M0BdlmW5gghB8K8X9VTNHrK5ogRQH92Aj-y2KQJxakrFKdnuTm_NlDIcH--D83cZ9-0Lmh6xTRo-XE1FdyTXlzM_Cayncd1qi9xnTDfeGAfzoLxTNyHgjzlLOUbZiK5pNU19an-XRYBqjvEEdFc9MW1bVTZAck6xQD81yl2SS0YPlT51PFp2A_66fr4aw3j2MYs-A",
     "realUserStatus" : 2,
     "user" : "000277.009b1336f18a492493a410166afc2841.0404",//苹果用户唯一标识符，它在同一个开发者账号下的所有 App 下是一样的，我们可以用它来与后台的账号体系绑定起来（类似于微信的OpenID）。
